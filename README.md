@@ -46,8 +46,11 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 1.  直接修改代码
 2.  提交代码
 3.  申请 Pull Request
-
-
+#### 如果要投稿主题，还可以
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
 
 > 以上内容均为项目设计
 
