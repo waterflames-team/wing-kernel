@@ -36,7 +36,7 @@ print("欢迎使用wing")
 if len(sys.argv) == 1:
     print("介绍")#同时打开后台服务器
     sys.exit(-1)#退出
-    
+
 model = sys.argv[1]#如果前面的if通过，说明有东西，那么可以开始检测后面的内容
 
 if model == "s":
@@ -44,6 +44,13 @@ if model == "s":
     sys.exit(-1)#退出
 if model == "z":
     print("使用指南")
+    print('''
+    输入python3 wing.py XXX中XXX部分的东西
+    s为激活配置生效
+    z为使用指南
+    v为版本号
+    无为介绍同时打开后台的服务器
+    ''')
     sys.exit(-1)#退出
 if model == "v":
     print("版本号")

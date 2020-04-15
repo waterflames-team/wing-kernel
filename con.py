@@ -2,7 +2,6 @@ import json
 
 def theme():
 
-
     conf_z = open("theme.json",'r')
     conf_s = conf_z.read()
     conf_z.close()
