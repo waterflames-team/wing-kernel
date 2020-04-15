@@ -1,12 +1,14 @@
 import sys
-import json
 
+import con
 
 
 '''
 函数区：
 命名以主题前三个字幕为准
 '''
+theme = con.theme()
+
 def exh():
     print("检测到主题blog-exhibition")
 
