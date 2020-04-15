@@ -64,5 +64,6 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 
 ## 前线开发状态
 
-#### 开发主题中：[跳转仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)
+#### 开发协作群开发主题中：[跳转仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)
 
+#### 主程序已写好除`配置生效、后台`这两个主功能外的其他大部分功能，正在开发`配置生效`敬请期待
