@@ -1,13 +1,21 @@
+'''
+准备区：
+引入需要的插件和需要的数据
+'''
+
+#引入插件
 import sys
 
+#引入文件
 import con
 
+#准备文件
+theme = con.theme()
 
 '''
 函数区：
 命名以主题前三个字幕为准
 '''
-theme = con.theme()
 
 def exh():
     print("检测到主题blog-exhibition")
