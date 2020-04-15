@@ -35,7 +35,9 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 #### 然后你的前期的环境准备工作就完成了
 
 ## 使用说明
-#### 首先你要做
+#### 首先你要打开theme.json
+#### 把theme这项后面的引号里的blog-XXXXX改成你复制过来主题的文件夹名
+
 ## 以下是几个用于配置生效的命令
 1.  xxxx
 2.  xxxx
