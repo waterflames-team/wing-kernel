@@ -43,7 +43,7 @@ if model == "s":
     print("激活配置生效")
     sys.exit(-1)#退出
 if model == "z":
-    print("使用指南")
+    print("使用指南：")
     print('''
     输入python3 wing.py XXX中XXX部分的东西
     s为激活配置生效
@@ -53,7 +53,12 @@ if model == "z":
     ''')
     sys.exit(-1)#退出
 if model == "v":
-    print("版本号")
+    print("版本号：")
+    print('''
+    目前程序开发中
+    所有的开发版本都会在第三位做文章
+    开发版本0.0.6（01版将完成部分东西的修改，不支持新增文章，02将重构)
+    ''')
     sys.exit(-1)#退出
 else:
     print("请确认你的激活方式是否错误")
