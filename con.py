@@ -24,7 +24,7 @@ def config(theme,xiang):
 
     conf_j = str(conf_s)
 
-    thing = xiang#取xx项
+    thing = xiang_c#取xx项
     conf_jg = json.loads(conf_j)
     conf_jg = conf_jg[thing]
 
