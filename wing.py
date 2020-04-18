@@ -28,11 +28,15 @@ class Out():
             sys.exit(-1)
         else:
             pass
+
 out = Out
 
-def exh():
-    print("检测到主题blog-exhibition")
 
+def exh(theme):
+    theme_e = theme
+    print("检测到主题blog-exhibition")
+    user = con.config_one(theme_e,"user")
+    introduce = con.config_one(theme_e,"introduce")
 
 
 '''
@@ -62,6 +66,10 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
 
     if model == "s":#配置生效
         print("激活配置生效")
+        '''
+        这里再来一个if，if前面得到的主题名等于XXXX，那么做什么
+        0.1.0先不做，到后面0.2弄新主题时再做
+        '''
         out.out()#退出
     if model == "z":#使用指南
         print("使用指南：")
@@ -78,7 +86,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.13（01版将完成部分东西的修改，不支持新增文章，02将重构)
+        开发版本0.0.14（01版将完成部分东西的修改，不支持新增文章，02将重构)
         ''')
         out.out()#退出
     else:#错误的情况
