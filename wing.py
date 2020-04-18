@@ -21,6 +21,12 @@ server_begin = 0
 def exh():
     print("检测到主题blog-exhibition")
 
+def out(i=1):
+    i_o = i
+    if i_o == 1:
+        sys.exit(-1)
+    else:
+        pass
 
 '''
 运行区：
@@ -49,7 +55,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
 
     if model == "s":#配置生效
         print("激活配置生效")
-        sys.exit(-1)#退出
+        out()#退出
     if model == "z":#使用指南
         print("使用指南：")
         print('''
@@ -59,18 +65,18 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         v为版本号
         无为介绍同时打开后台的服务器
         ''')
-        sys.exit(-1)#退出
+        out()#退出
     if model == "v":#版本号
         print("版本号：")
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.10（01版将完成部分东西的修改，不支持新增文章，02将重构)
+        开发版本0.0.11（01版将完成部分东西的修改，不支持新增文章，02将重构)
         ''')
-        sys.exit(-1)#退出
+        out()#退出
     else:#错误的情况
         print("请确认你的激活方式是否错误")
-        sys.exit(-1)#退出
+        out()#退出
 
 else:
     pass
