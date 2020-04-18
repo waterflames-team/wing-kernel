@@ -1,3 +1,20 @@
 {
-    "user": "非凡小王"
+    "user": "非凡小王",
+    "introduce": "非凡小王是灵空的创始人",
+    "word":{
+        "max": "1",
+        "1":{
+            "title": "hello",
+            "date": "20200418",
+            "content": "欢迎使用wing，请自行查看仓库或文档了解使用方法"
+        }
+    },
+    "right":{
+        "friend": {
+            "1": {
+                "name": "非凡小王的博客",
+                "from": "https://www.ffxw0720.club"
+            }
+        }
+    }
 }
