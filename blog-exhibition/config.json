@@ -11,6 +11,7 @@
     },
     "right":{
         "friend": {
+            "max": "1",
             "1": {
                 "name": "非凡小王的博客",
                 "from": "https://www.ffxw0720.club"
