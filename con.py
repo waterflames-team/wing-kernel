@@ -8,7 +8,8 @@ def theme():
 
     conf_j = str(conf_s)
 
+    thing = "theme"#取xx项
     conf_jg = json.loads(conf_j)
-    conf_jg = conf_jg["theme"]
+    conf_jg = conf_jg[thing]
 
     return conf_jg

@@ -41,12 +41,13 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 
 ## 使用说明
 #### 首先你要打开theme.json
-#### 把theme这项后面的引号里的blog-XXXXX改成你复制过来主题的文件夹名
+#### 把theme这项后面的引号里的blog-XXXX改成你复制过来主题的文件夹名
 
-## 以下是几个用于配置生效的命令
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 以下是几个常用的命令
+1.  `python3 wing.py`:查看介绍同时打开后台的服务器
+2.  `python3 wing.py s`:激活配置生效
+3.  `python3 wing.py z`:查看使用指南
+3.  `python3 wing.py v`:查看版本号
 
 ## 参与贡献
 
