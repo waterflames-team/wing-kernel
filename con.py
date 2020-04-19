@@ -18,7 +18,7 @@ def config_one(theme,xiang):
     theme_c = theme
     xiang_c = xiang
 
-    conf_z = open(theme_c+"config.json",'r')
+    conf_z = open(theme_c+"/config.json",'r')
     conf_s = conf_z.read()
     conf_z.close()
 
@@ -34,7 +34,7 @@ def config_two(theme,xiang_one,xiang_two):
     xiang_one_c = xiang_one
     xiang_two_c = xiang_two
 
-    conf_z = open(theme_c+"config.json",'r')
+    conf_z = open(theme_c+"/config.json",'r')
     conf_s = conf_z.read()
     conf_z.close()
 
@@ -51,7 +51,7 @@ def config_three(theme,xiang_one,xiang_two,xiang_three):
     xiang_two_c = xiang_two
     xiang_three_c = xiang_three
 
-    conf_z = open(theme_c+"config.json",'r')
+    conf_z = open(theme_c+"/config.json",'r')
     conf_s = conf_z.read()
     conf_z.close()
 
@@ -69,7 +69,7 @@ def config_four(theme,xiang_one,xiang_two,xiang_three,xiang_four):
     xiang_three_c = xiang_three
     xiang_four_c = xiang_four
 
-    conf_z = open(theme_c+"config.json",'r')
+    conf_z = open(theme_c+"/config.json",'r')
     conf_s = conf_z.read()
     conf_z.close()
 

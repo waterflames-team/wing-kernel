@@ -5,6 +5,7 @@
 
 #引入插件
 import sys
+import re
 
 #引入文件
 import con
@@ -34,13 +35,16 @@ out = Out
 
 def exh(theme):
     theme_e = theme
+    from blog_exhibition import theme
     print("检测到主题blog-exhibition")
 
     '''
     主题blog-exhibition的准备区：
-    准备用户自定义的数据
     '''
+
+    #用户自定义数据
     user = con.config_one(theme_e,"user")
+    photo = con.config_one(theme_e,"photo")
     introduce = con.config_one(theme_e,"introduce")
     word_max = int(con.config_two(theme_e,"word","max"))
 
@@ -62,12 +66,25 @@ def exh(theme):
         friend_modle = 1
         pass
 
+    #模板数据
+    write_one = theme.write_one()
+    write_two = theme.write_two()
+    write_three = theme.write_three()
+    write_four = theme.write_four()
+    write_five = theme.write_five()
+    write_six = theme.write_six()
+
     '''
     主题blog-exhibition的合成区：
     把用户自定义的数据和原来的index组成在一起变成网页写入到index.html
     同时这么做方便进行文章、右侧菜单的增加
     '''
-    
+    f = open("index.html","w+")
+    parts = [write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce]
+    write_all = ''.join(parts)
+    write_all = str(write_all)
+    f.write(write_all)
+    f.close()
 
 '''
 运行区：
@@ -103,10 +120,13 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
 
     if model == "s":#配置生效
         print("激活配置生效")
-        '''
-        这里再来一个if，if前面得到的主题名等于XXXX，那么做什么
-        0.1.0先不做，到后面0.2弄新主题时再做
-        '''
+
+        if theme=="blog_exhibition":
+            exh(theme)
+        else:
+            pass
+
+        print("完成")
         out.out()#退出
     if model == "z":#使用指南
         print("使用指南：")
@@ -122,7 +142,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.17（01版将完成部分东西的修改,新增文章，02将重构成模块化,03将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.18（01版将完成部分东西的修改,新增文章,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
