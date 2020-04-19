@@ -35,17 +35,39 @@ out = Out
 def exh(theme):
     theme_e = theme
     print("检测到主题blog-exhibition")
+
+    '''
+    主题blog-exhibition的准备区：
+    准备用户自定义的数据
+    '''
     user = con.config_one(theme_e,"user")
     introduce = con.config_one(theme_e,"introduce")
-    word_max = con.config_two(theme_e,"word","max")
-    if max == 1:
+    word_max = int(con.config_two(theme_e,"word","max"))
+
+    if word_max == 1:
         title = con.config_three(theme_e,"word","1","title")
         date = con.config_three(theme_e,"word","1","date")
         content = con.config_three(theme_e,"word","1","content")
+        word_modle = 0
     else:
+        word_modle = 1
         pass
-    friend_max = con.config_three(theme_e,"word","1","title")
 
+    friend_max = int(con.config_three(theme_e,"right","friend","max"))
+    if friend_max == 1:
+        name = con.config_four(theme_e,"right","friend","1","name")
+        f_from = con.config_four(theme_e,"right","friend","1","from")
+        friend_modle = 0
+    else:
+        friend_modle = 1
+        pass
+
+    '''
+    主题blog-exhibition的合成区：
+    把用户自定义的数据和原来的index组成在一起变成网页写入到index.html
+    同时这么做方便进行文章、右侧菜单的增加
+    '''
+    
 
 '''
 运行区：
@@ -100,7 +122,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.16（01版将完成部分东西的修改,新增文章，02将重构成模块化,03将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.17（01版将完成部分东西的修改,新增文章，02将重构成模块化,03将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
