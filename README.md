@@ -25,7 +25,7 @@
 
 ## 系统环境
 #### mac、linux和win都可以
-#### 手机版可以等一下后面的在线版（github、gitee）
+#### 手机版可以等一下后面的在线版（有关关键词：github、gitee、在线修改、灵活管理）
 
 ## 安装教程
 #### 首先你要保证你的电脑中有python3
@@ -44,7 +44,7 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 #### 把theme这项后面的引号里的blog-XXXX改成你复制过来主题的文件夹名
 
 ## 以下是几个常用的命令
-1.  `python3 wing.py`:查看介绍同时打开后台的服务器
+1.  `python3 wing.py`:查看介绍
 2.  `python3 wing.py s`:激活配置生效
 3.  `python3 wing.py z`:查看使用指南
 3.  `python3 wing.py v`:查看版本号
@@ -67,4 +67,4 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 
 #### 开发协作群开发主题中：[跳转仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)
 
-#### 主程序已写好除`配置生效、后台`这两个主功能外的其他大部分功能，正在开发`配置生效`敬请期待
+#### 主程序已写好除`配置生效`这两个主功能外的其他大部分功能，正在开发`配置生效`敬请期待
