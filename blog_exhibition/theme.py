@@ -39,3 +39,13 @@ def write_six():
     
     return write_six
     #个人介绍
+
+
+def write_seven():
+
+    #Leo韩
+    write_seven = '</p></div><div class="container-fluid"><div class="row">'
+   
+    
+    return write_seven
+

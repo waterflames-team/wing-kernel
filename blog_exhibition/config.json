@@ -3,11 +3,16 @@
     "photo": "https://gitee.com/ffxw0720/img/raw/master/IMG_3062.PNG",
     "introduce": "非凡小王是灵空的创始人",
     "word":{
-        "max": "1",
+        "max": "2",
         "1":{
             "title": "hello",
             "date": "20200418",
             "content": "欢迎使用wing，请自行查看仓库或文档了解使用方法"
+        },
+        "2":{
+            "title": "2号测试",
+            "date": "20200419",
+            "content": "这里是多文章测试"
         }
     },
     "right":{

@@ -54,6 +54,11 @@ def exh(theme):
         content = con.config_three(theme_e,"word","1","content")
         word_modle = 0
     else:
+        '''
+        title_one = con.config_three(theme_e,"word","1","title")
+        date_one = con.config_three(theme_e,"word","1","date")
+        content_one = con.config_three(theme_e,"word","1","content")
+        '''
         word_modle = 1
         pass
 
@@ -73,6 +78,7 @@ def exh(theme):
     write_four = theme.write_four()
     write_five = theme.write_five()
     write_six = theme.write_six()
+    write_seven = theme.write_seven()
 
     '''
     主题blog-exhibition的合成区：
@@ -142,7 +148,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.19（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.20（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
