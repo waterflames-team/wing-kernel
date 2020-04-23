@@ -47,29 +47,21 @@ def exh(theme):
     photo = con.config_one(theme_e,"photo")
     introduce = con.config_one(theme_e,"introduce")
     word_max = int(con.config_two(theme_e,"word","max"))
+    right_max = int(con.config_two(theme_e,"right","max"))
 
     if word_max == 1:
-        title = con.config_three(theme_e,"word","1","title")
-        date = con.config_three(theme_e,"word","1","date")
-        content = con.config_three(theme_e,"word","1","content")
         word_modle = 0
     else:
-        '''
-        title_one = con.config_three(theme_e,"word","1","title")
-        date_one = con.config_three(theme_e,"word","1","date")
-        content_one = con.config_three(theme_e,"word","1","content")
-        '''
         word_modle = 1
         pass
+    if right_max==1:
 
-    friend_max = int(con.config_three(theme_e,"right","friend","max"))
-    if friend_max == 1:
-        name = con.config_four(theme_e,"right","friend","1","name")
-        f_from = con.config_four(theme_e,"right","friend","1","from")
-        friend_modle = 0
-    else:
-        friend_modle = 1
-        pass
+        friend_max = int(con.config_three(theme_e,"right","1","max"))
+        if friend_max == 1:
+            friend_modle = 0
+        else:
+            friend_modle = 1
+            pass
 
     #模板数据
     write_one = theme.write_one()
@@ -80,17 +72,28 @@ def exh(theme):
     write_six = theme.write_six()
     write_seven = theme.write_seven()
 
+    write_word_one = theme.write_word_one()
+    write_word_two = theme.write_word_two()
+    write_word_three = theme.write_word_three()
+    write_word_four = theme.write_word_four()
+    write_word_five = theme.write_word_five()
+
+    write_eight = theme.write_eight()
+
     '''
     主题blog-exhibition的合成区：
     把用户自定义的数据和原来的index组成在一起变成网页写入到index.html
     同时这么做方便进行文章、右侧菜单的增加
     '''
-    f = open("index.html","w+")
-    parts = [write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce]
-    write_all = ''.join(parts)
-    write_all = str(write_all)
-    f.write(write_all)
-    f.close()
+
+
+    if word_modle==0 and friend_modle==0:
+        f = open("index.html","w+")
+        parts = [write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce,write_seven,write_word_one,con.config_three(theme_e,"word","1","id"),write_word_two,con.config_three(theme_e,"word","1","title"),write_word_three,con.config_three(theme_e,"word","1","date"),write_word_four,con.config_three(theme_e,"word","1","content"),write_word_five,write_eight]
+        write_all = ''.join(parts)
+        write_all = str(write_all)
+        f.write(write_all)
+        f.close()
 
 '''
 运行区：
@@ -148,7 +151,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.20（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.21（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况

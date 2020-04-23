@@ -43,9 +43,43 @@ def write_six():
 
 def write_seven():
 
-    #Leo韩
-    write_seven = '</p></div><div class="container-fluid"><div class="row">'
+    write_seven = '</p></div><div class="container-fluid"><div class="row"><main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">'
    
-    
     return write_seven
+
+def write_word_one():
+    word_one = '<div data-spy="scroll" data-target="#navbar-example3" data-offset="0"><h1 id="'
+   
+    return word_one
+    #id
+
+def write_word_two():
+    
+    word_two = '">'
+   
+    return word_two
+    #标题
+
+def write_word_three():
+    word_three = '</h1><h6 class="card-subtitle mb-2 text-muted">'
+   
+    return word_three
+    #日期
+
+def write_word_four():
+    word_four = '</h6><p>'
+   
+    return word_four
+    #内容
+
+def write_word_five():
+    word_five = '</p></div>'
+   
+    return word_five
+
+def write_eight():#只做结束，不做下个的开头
+
+    write_eight = '</main>'
+   
+    return write_eight
 
