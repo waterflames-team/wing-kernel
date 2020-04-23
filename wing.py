@@ -55,9 +55,9 @@ def exh(theme):
     else:
         word_modle = 1
         pass
+    
     if right_max==1:
 
-        
         if friend_max == 1:
             friend_modle = 0
         else:
