@@ -83,3 +83,8 @@ def write_eight():#只做结束，不做下个的开头
    
     return write_eight
 
+def write_nine():
+    write_eight = '<nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"><hr><br>'
+   
+    return write_eight
+

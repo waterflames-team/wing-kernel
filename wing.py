@@ -48,6 +48,7 @@ def exh(theme):
     introduce = con.config_one(theme_e,"introduce")
     word_max = int(con.config_two(theme_e,"word","max"))
     right_max = int(con.config_two(theme_e,"right","max"))
+    friend_max = int(con.config_three(theme_e,"right","1","max"))
 
     if word_max == 1:
         word_modle = 0
@@ -56,7 +57,7 @@ def exh(theme):
         pass
     if right_max==1:
 
-        friend_max = int(con.config_three(theme_e,"right","1","max"))
+        
         if friend_max == 1:
             friend_modle = 0
         else:
@@ -79,6 +80,7 @@ def exh(theme):
     write_word_five = theme.write_word_five()
 
     write_eight = theme.write_eight()
+    write_nine = theme.write_eight()
 
     '''
     主题blog-exhibition的合成区：
@@ -88,8 +90,20 @@ def exh(theme):
 
 
     if word_modle==0 and friend_modle==0:
+
         f = open("index.html","w+")
-        parts = [write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce,write_seven,write_word_one,con.config_three(theme_e,"word","1","id"),write_word_two,con.config_three(theme_e,"word","1","title"),write_word_three,con.config_three(theme_e,"word","1","date"),write_word_four,con.config_three(theme_e,"word","1","content"),write_word_five,write_eight]
+
+        parts = [
+
+        write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce,#介绍
+        write_seven,#总文章的开始
+        write_word_one,con.config_three(theme_e,"word","1","id"),write_word_two,con.config_three(theme_e,"word","1","title"),write_word_three,con.config_three(theme_e,"word","1","date"),write_word_four,con.config_three(theme_e,"word","1","content"),write_word_five,#一组文章
+        write_eight,#总文章的结尾
+        #write_nine#总右边的开头
+
+
+        ]
+
         write_all = ''.join(parts)
         write_all = str(write_all)
         f.write(write_all)
@@ -151,7 +165,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.21（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.22（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
