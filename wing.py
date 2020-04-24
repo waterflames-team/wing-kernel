@@ -113,11 +113,20 @@ def exh(theme):
     if word_modle==1 and friend_modle==0:
 
         f = open("index.html","w+")
-        hh = True
-        while hh==True:
 
-            word = str(write_word_one+con.config_three(theme_e,"word","1","id")+write_word_two+con.config_three(theme_e,"word","1","title")+write_word_three+con.config_three(theme_e,"word","1","date")+write_word_four+con.config_three(theme_e,"word","1","content")+write_word_five)
+        hh = True
+        word_time = 0
+        word = " "
+
+        while hh==True:
+            
+            word = word+str(write_word_one+con.config_three(theme_e,"word",str(word_max),"id")+write_word_two+con.config_three(theme_e,"word",str(word_max),"title")+write_word_three+con.config_three(theme_e,"word",str(word_max),"date")+write_word_four+con.config_three(theme_e,"word",str(word_max),"content")+write_word_five)
             word_max = word_max-1
+            word_time = word_time+1
+
+            if word_max==0:
+                hh=False
+
 
         parts = [
 
@@ -190,7 +199,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.24（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.25（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
