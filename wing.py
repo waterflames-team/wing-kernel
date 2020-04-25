@@ -7,13 +7,13 @@
 import sys
 
 #引入文件
-import con
+import config
 
 #准备数据
 global out
 out = None
 
-theme = con.theme()
+theme = config.theme()
 server_begin = 0
 
 '''
@@ -42,11 +42,11 @@ def exh(theme):
     '''
 
     #用户自定义数据
-    user = con.config_one(theme_e,"user")
-    photo = con.config_one(theme_e,"photo")
-    introduce = con.config_one(theme_e,"introduce")
-    word_max = int(con.config_two(theme_e,"word","max"))
-    friend_max = int(con.config_two(theme_e,"right","max"))
+    user = config.config_one(theme_e,"user")
+    photo = config.config_one(theme_e,"photo")
+    introduce = config.config_one(theme_e,"introduce")
+    word_max = int(config.config_two(theme_e,"word","max"))
+    friend_max = int(config.config_two(theme_e,"right","max"))
 
 
 
@@ -96,7 +96,7 @@ def exh(theme):
 
     while hh==True:
             
-        word = word+str(write_word_one+con.config_three(theme_e,"word",str(word_max),"id")+write_word_two+con.config_three(theme_e,"word",str(word_max),"title")+write_word_three+con.config_three(theme_e,"word",str(word_max),"date")+write_word_four+con.config_three(theme_e,"word",str(word_max),"content")+write_word_five)
+        word = word+str(write_word_one+config.config_three(theme_e,"word",str(word_max),"id")+write_word_two+config.config_three(theme_e,"word",str(word_max),"title")+write_word_three+config.config_three(theme_e,"word",str(word_max),"date")+write_word_four+config.config_three(theme_e,"word",str(word_max),"content")+write_word_five)
         word_max = word_max-1
 
         if word_max==0:
@@ -109,10 +109,10 @@ def exh(theme):
 
     while fj==True:
   
-        friend = str(right_friend_one+con.config_three(theme_e,"right",str(friend_max),"from")+right_friend_two+con.config_three(theme_e,"right",str(friend_max),"name")+right_friend_three)+zj
+        friend = str(right_friend_one+config.config_three(theme_e,"right",str(friend_max),"from")+right_friend_two+config.config_three(theme_e,"right",str(friend_max),"name")+right_friend_three)+zj
         friend_max = friend_max-1
 
-        right = str(right_one+con.config_two(theme_e,"right","name")+right_two)
+        right = str(right_one+config.config_two(theme_e,"right","name")+right_two)
         
 
         if friend_max==0:
@@ -122,11 +122,11 @@ def exh(theme):
 
     nb = True
     r_word = " "
-    word_max = int(con.config_two(theme_e,"word","max"))
+    word_max = int(config.config_two(theme_e,"word","max"))
 
     while nb==True:
             
-        r_word = r_word+str(right_word_one+con.config_three(theme_e,"word",str(word_max),"id")+right_word_two+con.config_three(theme_e,"word",str(word_max),"title")+right_word_three)
+        r_word = r_word+str(right_word_one+config.config_three(theme_e,"word",str(word_max),"id")+right_word_two+config.config_three(theme_e,"word",str(word_max),"title")+right_word_three)
         word_max = word_max-1
 
         if word_max==0:
@@ -205,7 +205,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.1.34-200425（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.1.35-200425（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
