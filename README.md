@@ -54,15 +54,15 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 2. `word-1\2\3-title`:文章标题
 2. `word-1\2\3-date`:文章发表日期
 2. `word-1\2\3-content`:文章内容
-2. ``:
-2. ``:
-2. ``:
-2. ``:
-2. ``:
-2. ``:
-2. ``:
-2. ``:
+2. `right-name`:跳转区名字
+2. `right-max`:最大的链接数量
+2. `right-1\2\3-id`:链接id
+2. `right-1\2\3-id`:链接名字
+2. `right-1\2\3-id`:链接跳转地址（本地与网络上的均可）
 
+### 如何新建文章：
+
+### 如何新建友链：
 
 
 ## 以下是几个常用的命令
