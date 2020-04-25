@@ -30,14 +30,15 @@
 #### 手机版可以等一下后面的在线版（有关关键词：github、gitee、在线修改、灵活管理）
 
 ## 安装教程
-#### 首先你要保证你的电脑中有python3和git
-#### 如没有可以百度一下属于自己系统的python3和git安装方式
+#### 首先你要保证你的电脑中有python3和git（git可选）
+#### 如没有可以百度一下属于自己系统的python3和git（git可选）安装方式
 #### 作者的python为3.7.3，如果你用你下载的python3运行出现错误，可以试一试使用与作者相同的python3.7.3
 
 1. 把仓库下载下来，然后终端执行：
 ```
 git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ```
+##### 不想安装git的用户可以下载zip，然后打开cmd，cd到这个目录下，继续操作，但这种方法是不推荐的
 2.  cd lingkong-wing
 3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑主题名（到时候是以英文呈现）为文件夹名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
