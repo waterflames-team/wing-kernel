@@ -116,7 +116,40 @@ def right_friend_three():
    
     return right_friend_three
 
-def right_three():
-    right_three = '</ul>'
+def right_word_one():
+    right_word_one = '<br><hr><br><ul class="nav flex-column"><p class="lead">文章跳转</p><li class="nav-item"><a class="nav-link" href="#'
    
-    return right_three
+    return right_word_one
+    #id
+
+def right_word_two():
+    right_word_two = '"><span data-feather="home"></span>'
+   
+    return right_word_two
+    #文章标题
+
+def right_word_three():
+    right_word_three = '</a></li>'
+   
+    return right_word_three
+
+def right_five():
+    right_word_five = '</ul></div></nav>'
+   
+    return right_word_five
+
+def write_ten():
+    write_ten = '</div></div><br><hr>'
+   
+    return write_ten
+
+def write_ele():
+    write_ele = '<footer class="bd-footer text-muted"><div class="container-fluid p-3 p-md-5"><p>© 2020 '
+   
+    return write_ele
+    #leo韩
+
+def write_twl():
+    write_twl = ' | Make by wing<div class="d-flex align-items-center"><a href="#top" target="_self">返回顶部</a></div></p></div></footer><!--head、small--></div></div></div><!--head、small--><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></body></html>'
+   
+    return write_twl
