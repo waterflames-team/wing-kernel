@@ -9,6 +9,8 @@
 | 仓库   	 |    仓库文件夹	 |
 | :--: 	| :--:	 |
 | wing.py（主文件） 	| 因不同的主题而异/统一一个（作者还在思考） 	 |
+| blog_exhibition（默认主题文件） 	|  	 |
+| readme（readme所需的文件） 	|  	 |
 | con.py（json读取文件） 	|  	 |
 | theme（主题选择文件） 	|  	 |
 | LICENSE（开源协议） 	|  	 |
@@ -28,9 +30,10 @@
 #### 手机版可以等一下后面的在线版（有关关键词：github、gitee、在线修改、灵活管理）
 
 ## 安装教程
-#### 首先你要保证你的电脑中有python3
-#### 如没有可以百度一下属于自己系统的python3安装方式
+#### 首先你要保证你的电脑中有python3和git
+#### 如没有可以百度一下属于自己系统的python3和git安装方式
 #### 作者的python为3.7.3，如果你用你下载的python3运行出现错误，可以试一试使用与作者相同的python3.7.3
+
 1. 把仓库下载下来，然后终端执行：
 ```
 git clone https://gitee.com/lingkonggzs/lingkong-wing.git
@@ -61,9 +64,12 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 2. `right-1\2\3-id`:链接跳转地址（本地与网络上的均可）
 
 ### 如何新建文章：
-![https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/1.png](hh)
-### 如何新建友链：
+![第一步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/1.png)
+![第二步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/2.png)
 
+### 如何新建友链：
+![第一步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/3.png)
+![第二步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/4.png)
 
 ## 以下是几个常用的命令
 1.  `python3 wing.py`:查看介绍
