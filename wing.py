@@ -82,6 +82,13 @@ def exh(theme):
     write_eight = theme.write_eight()
     write_nine = theme.write_eight()
 
+    right_one = theme.right_one()
+    right_two = theme.right_two()
+    right_three = theme.right_three()
+    right_friend_one = theme.right_friend_one()
+    right_friend_two = theme.right_friend_two()
+    right_friend_three = theme.right_friend_three()
+
     '''
     主题blog-exhibition的合成区：
     把用户自定义的数据和原来的index组成在一起变成网页写入到index.html
@@ -92,17 +99,26 @@ def exh(theme):
     f = open("index.html","w+")
 
     hh = True
-    word_time = 0
     word = " "
 
     while hh==True:
             
         word = word+str(write_word_one+con.config_three(theme_e,"word",str(word_max),"id")+write_word_two+con.config_three(theme_e,"word",str(word_max),"title")+write_word_three+con.config_three(theme_e,"word",str(word_max),"date")+write_word_four+con.config_three(theme_e,"word",str(word_max),"content")+write_word_five)
         word_max = word_max-1
-        word_time = word_time+1
 
         if word_max==0:
             hh=False
+
+    bb = True
+    friend = " "
+
+    while bb==True:
+            
+        friend = str(right_friend_one+con.config_four(theme_e,"right","1",str(friend_max),"from")+right_friend_two+con.config_four(theme_e,"right","1",str(friend_max),"name")+right_friend_three)+friend
+        friend_max = friend_max-1
+
+        if friend_max==0:
+            bb=False
 
 
     parts = [
@@ -111,7 +127,10 @@ def exh(theme):
     write_seven,#总文章的开始
     word,
     write_eight,#总文章的结尾
-    #write_nine#总右边的开头
+    write_nine,#总右边的开头
+    right_one,con.config_three(theme_e,"right","1","name"),right_two,
+    friend,
+    right_three
 
     ]
 
@@ -176,7 +195,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.26（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.27（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况

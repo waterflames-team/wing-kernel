@@ -88,3 +88,35 @@ def write_nine():
    
     return write_eight
 
+def right_one():
+    right_one = '<ul class="nav flex-column"><p class="lead">'
+   
+    return right_one
+    #友情链接
+
+def right_two():
+    right_two = '</p>'
+   
+    return right_two
+
+def right_friend_one():
+    right_friend_one = '<li class="nav-item"><a class="nav-link" href="'
+   
+    return right_friend_one
+    #链接
+
+def right_friend_two():
+    right_friend_two = '"><span data-feather="home"></span>'
+   
+    return right_friend_two
+    #友链名
+
+def right_friend_three():
+    right_friend_three = '</a></li>'
+   
+    return right_friend_three
+
+def right_three():
+    right_three = '</ul>'
+   
+    return right_three

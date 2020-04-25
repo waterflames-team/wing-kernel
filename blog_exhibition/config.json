@@ -3,25 +3,22 @@
     "photo": "https://gitee.com/ffxw0720/img/raw/master/IMG_3062.PNG",
     "introduce": "非凡小王是灵空的创始人",
     "word":{
-        "max": "2",
+        "max": "1",
         "1":{
             "id": "1",
             "title": "hello",
             "date": "20200418",
             "content": "欢迎使用wing，请自行查看仓库或文档了解使用方法"
-        },
-        "2":{
-            "id": "2",
-            "title": "测试",
-            "date": "20200424",
-            "content": "历史性的一刻：21:58，非凡小王成功将多文章功能实现！"
         }
     },
     "right":{
         "max": "1",
         "1": {
+            "id": "1",
+            "name": "友情链接",
             "max": "1",
             "1": {
+                "id": "1",
                 "name": "非凡小王的真正博客",
                 "from": "https://www.ffxw0720.club"
             }
