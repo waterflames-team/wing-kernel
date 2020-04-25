@@ -96,4 +96,4 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 
 #### 开发协作群开发主题中：[跳转仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)
 
-#### 主程序已写好除`配置生效`这两个主功能外的其他大部分功能，正在开发`配置生效`敬请期待
+#### 已适配好默认主题
