@@ -141,7 +141,7 @@ def exh(theme):
     write_eight,write_nine,
     right_ru,
     r_word,
-    right_five,write_ten,write_ele,write_twl
+    right_five,write_ten,write_ele,user,write_twl
 
     ]
 
@@ -206,7 +206,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.31（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.32（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况

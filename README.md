@@ -37,17 +37,24 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ```
 2.  cd lingkong-wing
 3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑主题名（到时候是以英文呈现）为文件夹名
+##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
+
 #### 然后你的前期的环境准备工作就完成了
 
 ## 使用说明
 #### 首先你要打开theme.json
 #### 把theme这项后面的引号里的blog-XXXX改成你复制过来主题的文件夹名
+##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
+#### 然后打开你的主题文件夹，打开文件夹下的config.json配置上你喜欢的东西
+### 配置内容说明：
+1. user
 
 ## 以下是几个常用的命令
 1.  `python3 wing.py`:查看介绍
 2.  `python3 wing.py s`:激活配置生效
 3.  `python3 wing.py z`:查看使用指南
 3.  `python3 wing.py v`:查看版本号
+
 
 ## 参与贡献
 
