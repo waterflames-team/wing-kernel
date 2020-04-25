@@ -91,6 +91,12 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 
 > 以上内容均为项目设计
 
+## 在线版预告
+#### 手机用户可以等一等未来会开发的在线版
+#### 在线版在一个网页上，支持本地端的所有功能
+#### 还支持一键同步github、gitee
+#### 敬请期待!!!
+
 
 ## 前线开发状态
 
