@@ -47,7 +47,23 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
 #### 然后打开你的主题文件夹，打开文件夹下的config.json配置上你喜欢的东西
 ### 配置内容说明：
-1. user
+1. `user`:用户称呼
+2. `photo`:头像地址（本地与网络上的均可）
+2. `word-max`:最大的文章值
+2. `word-1\2\3-id`:文章id
+2. `word-1\2\3-title`:文章标题
+2. `word-1\2\3-date`:文章发表日期
+2. `word-1\2\3-content`:文章内容
+2. ``:
+2. ``:
+2. ``:
+2. ``:
+2. ``:
+2. ``:
+2. ``:
+2. ``:
+
+
 
 ## 以下是几个常用的命令
 1.  `python3 wing.py`:查看介绍

@@ -46,8 +46,7 @@ def exh(theme):
     photo = con.config_one(theme_e,"photo")
     introduce = con.config_one(theme_e,"introduce")
     word_max = int(con.config_two(theme_e,"word","max"))
-    right_max = int(con.config_two(theme_e,"right","max"))
-    friend_max = int(con.config_three(theme_e,"right","1","max"))
+    friend_max = int(con.config_two(theme_e,"right","max"))
 
 
 
@@ -110,10 +109,10 @@ def exh(theme):
 
     while fj==True:
   
-        friend = str(right_friend_one+con.config_four(theme_e,"right","1",str(friend_max),"from")+right_friend_two+con.config_four(theme_e,"right","1",str(friend_max),"name")+right_friend_three)+zj
+        friend = str(right_friend_one+con.config_three(theme_e,"right",str(friend_max),"from")+right_friend_two+con.config_three(theme_e,"right",str(friend_max),"name")+right_friend_three)+zj
         friend_max = friend_max-1
 
-        right = str(right_one+con.config_three(theme_e,"right",str(right_max),"name")+right_two)
+        right = str(right_one+con.config_two(theme_e,"right","name")+right_two)
         
 
         if friend_max==0:
@@ -206,7 +205,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.32（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.33（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
