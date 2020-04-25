@@ -1,4 +1,4 @@
-
+# -*- coding: UTF-8 -*-
 
 def write_one():
 
