@@ -89,59 +89,36 @@ def exh(theme):
     '''
 
 
-    if word_modle==0 and friend_modle==0:
+    f = open("index.html","w+")
 
-        f = open("index.html","w+")
+    hh = True
+    word_time = 0
+    word = " "
 
-        word = str(write_word_one+con.config_three(theme_e,"word","1","id")+write_word_two+con.config_three(theme_e,"word","1","title")+write_word_three+con.config_three(theme_e,"word","1","date")+write_word_four+con.config_three(theme_e,"word","1","content")+write_word_five)
-
-        parts = [
-
-        write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce,#介绍
-        write_seven,#总文章的开始
-        word,
-        write_eight,#总文章的结尾
-        #write_nine#总右边的开头
-
-        ]
-
-        write_all = ''.join(parts)
-        write_all = str(write_all)
-        f.write(write_all)
-        f.close()
-
-    if word_modle==1 and friend_modle==0:
-
-        f = open("index.html","w+")
-
-        hh = True
-        word_time = 0
-        word = " "
-
-        while hh==True:
+    while hh==True:
             
-            word = word+str(write_word_one+con.config_three(theme_e,"word",str(word_max),"id")+write_word_two+con.config_three(theme_e,"word",str(word_max),"title")+write_word_three+con.config_three(theme_e,"word",str(word_max),"date")+write_word_four+con.config_three(theme_e,"word",str(word_max),"content")+write_word_five)
-            word_max = word_max-1
-            word_time = word_time+1
+        word = word+str(write_word_one+con.config_three(theme_e,"word",str(word_max),"id")+write_word_two+con.config_three(theme_e,"word",str(word_max),"title")+write_word_three+con.config_three(theme_e,"word",str(word_max),"date")+write_word_four+con.config_three(theme_e,"word",str(word_max),"content")+write_word_five)
+        word_max = word_max-1
+        word_time = word_time+1
 
-            if word_max==0:
-                hh=False
+        if word_max==0:
+            hh=False
 
 
-        parts = [
+    parts = [
 
-        write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce,#介绍
-        write_seven,#总文章的开始
-        word,
-        write_eight,#总文章的结尾
-        #write_nine#总右边的开头
+    write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce,#介绍
+    write_seven,#总文章的开始
+    word,
+    write_eight,#总文章的结尾
+    #write_nine#总右边的开头
 
-        ]
+    ]
 
-        write_all = ''.join(parts)
-        write_all = str(write_all)
-        f.write(write_all)
-        f.close()
+    write_all = ''.join(parts)
+    write_all = str(write_all)
+    f.write(write_all)
+    f.close()
 
 '''
 运行区：
@@ -199,7 +176,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.25（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.26（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
