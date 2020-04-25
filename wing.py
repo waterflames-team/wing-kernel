@@ -49,19 +49,7 @@ def exh(theme):
     right_max = int(con.config_two(theme_e,"right","max"))
     friend_max = int(con.config_three(theme_e,"right","1","max"))
 
-    if word_max == 1:
-        word_modle = 0
-    else:
-        word_modle = 1
-        pass
-    
-    if right_max==1:
 
-        if friend_max == 1:
-            friend_modle = 0
-        else:
-            friend_modle = 1
-            pass
 
     #模板数据
     write_one = theme.write_one()
@@ -115,16 +103,24 @@ def exh(theme):
         if word_max==0:
             hh=False
 
-    bb = True
-    friend = " "
+    fj = True
+    zj = " "
+    right_zt = 0
 
-    while bb==True:
-            
-        friend = str(right_friend_one+con.config_four(theme_e,"right","1",str(friend_max),"from")+right_friend_two+con.config_four(theme_e,"right","1",str(friend_max),"name")+right_friend_three)+friend
+
+    while fj==True:
+
+        friend = str(right_friend_one+con.config_four(theme_e,"right","1",str(friend_max),"from")+right_friend_two+con.config_four(theme_e,"right","1",str(friend_max),"name")+right_friend_three)+zj
         friend_max = friend_max-1
+        right = str(right_one+con.config_three(theme_e,"right",str(right_max),"name")+right_two)
+        right_max = right_max-1
+        right_zt = right_zt+1
 
-        if friend_max==0:
-            bb=False
+        if right_zt==1:
+            right_ru = right+friend
+
+        if right_max==0 and friend_max==0:
+            fj=False
 
     nb = True
     r_word = " "
@@ -145,8 +141,7 @@ def exh(theme):
     word,
     write_eight,#总文章的结尾
     write_nine,#总右边的开头
-    right_one,con.config_three(theme_e,"right","1","name"),right_two,
-    friend,
+    right_ru,
     r_word,
     right_five,write_ten,write_ele,write_twl
 
@@ -213,7 +208,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.0.29（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
+        开发版本0.0.30（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他功能，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
