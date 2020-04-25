@@ -61,7 +61,7 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 2. `right-1\2\3-id`:链接跳转地址（本地与网络上的均可）
 
 ### 如何新建文章：
-
+![https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/1.png](hh)
 ### 如何新建友链：
 
 
