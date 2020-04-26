@@ -83,19 +83,6 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 3.  `python3 wing.py v`:查看版本号
 
 
-## 参与贡献
-
-1.  直接修改代码
-2.  提交代码
-3.  申请 Pull Request
-#### 如果要投稿主题，还可以
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-> 以上内容均为项目设计
-
 ## 错误说明
 #### 如果你运行时出现错误
 #### 请尝试以下方法：
@@ -121,6 +108,29 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 #### 开发协作群开发主题中：[跳转仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)
 
 #### 已适配好默认主题
+
+
+
+## 开发者计划
+### 因为依靠官方的力量没法制作那么多的主题，并且按照灵空官方的惯例，这次的wing开发者计划来啦！
+### 开发者计划的两大方面的制作
+1. html
+#### 制作一个html的主题，要求原创、美观
+#### html提交到[theme](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)的仓库下的result新建文件夹名叫：类型_名字，如blog_exhibition
+2. py
+#### 第二个要模仿默认主题的theme.py文件以及config.json文件，制作一款主题
+#### 要求：import后就可以生成好，同样生成的结果要原创、美观
+#### 温馨提示：读取json文件可以import config，然后通过运行主程序来运行这个主题文件进行测试
+#### 做好之后提交到提交到[theme](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)的仓库下新建一个文件夹名叫：类型_名字，如blog_exhibition
+### 以上两大方面，第一个方面只要求制作html，较为简单，但是官方的适配时间要很久。第二个方面是制作一个完整主题，直接就可以使用，无bug官方可以立刻上线，与大家见面
+### 欢迎参与开发者计划！！！
+
+#### 提交方法
+1.  Fork [theme](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)这个仓库仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
+
 
 ## 作者联系方式
 > 如果你有问题，请你通过以下方式联系非凡小王（作者）
