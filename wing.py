@@ -34,123 +34,6 @@ class Out():
 out = Out
 
 
-def exh(theme):
-    theme_e = theme
-    from blog_exhibition import theme
-    print("检测到主题blog-exhibition")
-
-    '''
-    主题blog-exhibition的准备区：
-    '''
-
-    #用户自定义数据
-    user = config.config_one(theme_e,"user")
-    photo = config.config_one(theme_e,"photo")
-    introduce = config.config_one(theme_e,"introduce")
-    word_max = int(config.config_two(theme_e,"word","max"))
-    friend_max = int(config.config_two(theme_e,"right","max"))
-
-
-
-    #模板数据
-    write_one = theme.write_one()
-    write_two = theme.write_two()
-    write_three = theme.write_three()
-    write_four = theme.write_four()
-    write_five = theme.write_five()
-    write_six = theme.write_six()
-    write_seven = theme.write_seven()
-
-    write_word_one = theme.write_word_one()
-    write_word_two = theme.write_word_two()
-    write_word_three = theme.write_word_three()
-    write_word_four = theme.write_word_four()
-    write_word_five = theme.write_word_five()
-
-    write_eight = theme.write_eight()
-    write_nine = theme.write_nine()
-
-    right_one = theme.right_one()
-    right_two = theme.right_two()
-    right_friend_one = theme.right_friend_one()
-    right_friend_two = theme.right_friend_two()
-    right_friend_three = theme.right_friend_three()
-
-    right_word_one = theme.right_word_one()
-    right_word_two = theme.right_word_two()
-    right_word_three = theme.right_word_three()
-    right_five = theme.right_five()
-    write_ten = theme.write_ten()
-    write_ele = theme.write_ele()
-    write_twl = theme.write_twl()
-
-    '''
-    主题blog-exhibition的合成区：
-    把用户自定义的数据和原来的index组成在一起变成网页写入到index.html
-    同时这么做方便进行文章、右侧菜单的增加
-    '''
-
-
-    f = open("index.html","w+",encoding = "utf-8")
-
-    hh = True
-    word = " "
-
-    while hh==True:
-            
-        word = word+str(write_word_one+config.config_three(theme_e,"word",str(word_max),"id")+write_word_two+config.config_three(theme_e,"word",str(word_max),"title")+write_word_three+config.config_three(theme_e,"word",str(word_max),"date")+write_word_four+config.config_three(theme_e,"word",str(word_max),"content")+write_word_five)
-        word_max = word_max-1
-
-        if word_max==0:
-            hh=False
-
-    fj = True
-    zj = " "
-    right_zt = 0
-
-
-    while fj==True:
-  
-        friend = str(right_friend_one+config.config_three(theme_e,"right",str(friend_max),"from")+right_friend_two+config.config_three(theme_e,"right",str(friend_max),"name")+right_friend_three)+zj
-        friend_max = friend_max-1
-
-        right = str(right_one+config.config_two(theme_e,"right","name")+right_two)
-        
-
-        if friend_max==0:
-            right_ru = right+friend
-            fj=False
-
-
-    nb = True
-    r_word = " "
-    word_max = int(config.config_two(theme_e,"word","max"))
-
-    while nb==True:
-            
-        r_word = r_word+str(right_word_one+config.config_three(theme_e,"word",str(word_max),"id")+right_word_two+config.config_three(theme_e,"word",str(word_max),"title")+right_word_three)
-        word_max = word_max-1
-
-        if word_max==0:
-            nb=False
-
-    parts = [
-
-    write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce,#介绍
-    write_seven,#总文章的开始
-    word,
-    write_eight,write_nine,
-    right_ru,
-    r_word,
-    right_five,write_ten,write_ele,user,write_twl
-
-    ]
-
-    write_all = ''.join(parts)
-    write_all = str(write_all)
-    f.write(write_all)
-    f.close()
-
 '''
 运行区：
 以sys组件读取python3 wing.py XXX中XXX部分的东西
@@ -187,7 +70,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print("激活配置生效")
 
         if theme=="blog_exhibition":
-            exh(theme)
+            from blog_exhibition import theme
         else:
             pass
 
@@ -207,7 +90,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        开发版本0.1.39-200425（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他主题，并且开始制作server版)
+        开发版本0.1.40-200425（01版将完成部分东西的修改,新增文章,新建右侧栏,02将根据用户体验新增其他主题，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况
@@ -216,5 +99,3 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
 
 else:
     pass
-
-
