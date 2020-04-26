@@ -8,8 +8,8 @@
 ### 此仓库
 | 仓库   	 |    仓库文件夹	 |
 | :--: 	| :--:	 |
-| wing.py（主文件） 	| 因不同的主题而异/统一一个（作者还在思考） 	 |
-| blog_exhibition（默认主题文件） 	|  	 |
+| wing.py（主文件） 	| blog_exhibition（默认主题文件）	 |
+|  	| blog_exhibition：config（内容配置文件）、theme（主题模板文件以及激活文件）	 |
 | readme（readme所需的文件） 	|  	 |
 | con.py（json读取文件） 	|  	 |
 | theme（主题选择文件） 	|  	 |
@@ -19,6 +19,7 @@
 |   外部  |    内部   |  再内部 |
 | :--: 	    | :--:	  |:--:	  |
 | 主题1 	| json配置文件 	 |     |
+|  	| theme文件 	 |     |
 | 主题2 	| 以此类推 	|       |
 | 样式文件 	| 主题1 	|   index文件   |
 |      |        |    web文件夹（其他web文件）   |
@@ -26,7 +27,7 @@
 
 
 ## 系统环境
-#### mac、linux和win都可以（目前经过一定的测试，发现win不太成熟，不建议使用）
+#### mac、linux和win都可以
 #### 手机版可以等一下后面的在线版（有关关键词：github、gitee、在线修改、灵活管理）
 
 ## 安装教程
@@ -34,13 +35,14 @@
 #### 如没有可以百度一下属于自己系统的python3和git（git可选）安装方式
 #### 作者的python为3.7.3，如果你用你下载的python3运行出现错误，可以试一试使用与作者相同的python3.7.3
 
-1. 把仓库下载下来，然后终端执行：
+1. 在要下载的地方右键，git bash here（前提是你有装git）输入并执行：（Unix的系统可以cd到你想要装的地方执行）
 ```
 git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ```
-##### 不想安装git的用户可以下载zip，然后打开cmd，cd到这个目录下，继续操作，但这种方法是不推荐的
+##### 不想安装git的用户可以下载zip，解压，然后打开cmd，cd到这个目录下，继续操作，但这种方法是不推荐的
 2.  cd lingkong-wing
 3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑主题名（到时候是以英文呈现）为文件夹名
+##### 温馨提示：文件夹名不可修改，仓库里是啥名就是啥名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
 
 #### 然后你的前期的环境准备工作就完成了
@@ -71,6 +73,8 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ### 如何新建友链：
 ![第一步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/3.png)
 ![第二步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/4.png)
+
+### ps：win打开命令行的方法是右键，git bash here。unix则要cd到这个目录
 
 ## 以下是几个常用的命令
 1.  `python3 wing.py`:查看介绍
