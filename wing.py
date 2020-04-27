@@ -37,10 +37,9 @@ out = Out
 '''
 运行区：
 以sys组件读取python3 wing.py XXX中XXX部分的东西
-s为激活配置生效
+无为激活配置生效
 z为使用指南
 v为版本号
-无为介绍
 '''
 
 
@@ -55,32 +54,28 @@ print('''
 ''')
 
 if len(sys.argv) == 1:#无的情况
-    print("介绍")
-    print('''
-    灵翼是一个由非凡小王开发，折腾调协助维护的基于python3语言的一键建站系统
-    ''')
+    print("激活配置生效")
+
+    if theme=="blog_exhibition":
+        from blog_exhibition import theme
+    else:
+        pass
+
+    print("完成")
     server_begin = 1
+    out.out()#退出
+    
 
 
 if server_begin == 0:#判断无的情况是否已经经过，避免不必要的运行错误
     
     model = sys.argv[1]#如果前面的if通过，说明有东西，那么可以开始检测后面的内容
 
-    if model == "s":#配置生效
-        print("激活配置生效")
-
-        if theme=="blog_exhibition":
-            from blog_exhibition import theme
-        else:
-            pass
-
-        print("完成")
-        out.out()#退出
     if model == "z":#使用指南
         print("使用指南：")
         print('''
         输入python3 wing.py XXX中XXX部分的东西
-        s为激活配置生效
+        无为激活配置生效
         z为使用指南
         v为版本号
         ''')
@@ -90,7 +85,7 @@ if server_begin == 0:#判断无的情况是否已经经过，避免不必要的�
         print('''
         目前程序开发中
         所有的开发版本都会在第三位做文章
-        正式版本1.1.42-200426（第2版将根据用户体验新增其他主题，并且开始制作server版)
+        开发版本1.1.43-200426（第2版将根据用户体验新增其他主题，并且开始制作server版)
         ''')
         out.out()#退出
     else:#错误的情况

@@ -55,16 +55,16 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ### 配置内容说明：
 1. `user`:用户称呼
 2. `photo`:头像地址（本地与网络上的均可）
-2. `word-max`:最大的文章值
-2. `word-1\2\3-id`:文章id
-2. `word-1\2\3-title`:文章标题
-2. `word-1\2\3-date`:文章发表日期
-2. `word-1\2\3-content`:文章内容
-2. `right-name`:跳转区名字
-2. `right-max`:最大的链接数量
-2. `right-1\2\3-id`:链接id
-2. `right-1\2\3-id`:链接名字
-2. `right-1\2\3-id`:链接跳转地址（本地与网络上的均可）
+3. `word-max`:最大的文章值
+4. `word-1\2\3-id`:文章id
+5. `word-1\2\3-title`:文章标题
+6. `word-1\2\3-date`:文章发表日期
+7. `word-1\2\3-content`:文章内容
+8. `right-name`:跳转区名字
+9. `right-max`:最大的链接数量
+10. `right-1\2\3-id`:链接id
+11. `right-1\2\3-id`:链接名字
+12. `right-1\2\3-id`:链接跳转地址（本地与网络上的均可）
 
 ### 如何新建文章：
 ![第一步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/1.png)
@@ -77,9 +77,8 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ### ps：win打开命令行的方法是右键，git bash here。unix则要cd到这个目录
 
 ## 以下是几个常用的命令
-1.  `python3 wing.py`:查看介绍
-2.  `python3 wing.py s`:激活配置生效
-3.  `python3 wing.py z`:查看使用指南
+1.  `python3 wing.py`:激活配置生效
+2.  `python3 wing.py z`:查看使用指南
 3.  `python3 wing.py v`:查看版本号
 
 
