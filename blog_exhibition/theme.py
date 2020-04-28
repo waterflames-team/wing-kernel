@@ -119,9 +119,14 @@ def right_friend_three():
     return right_friend_three
 
 def right_word_one():
-    right_word_one = '<br><hr><br><ul class="nav flex-column"><p class="lead">文章跳转</p><li class="nav-item"><a class="nav-link" href="#'
+    right_word_one = '<br><hr><br><ul class="nav flex-column"><p class="lead">文章跳转</p><li class="nav-item">'
    
     return right_word_one
+
+
+def right_word_one_b():
+    right_word_one_b = '<a class="nav-link" href="#'
+    return right_word_one_b
     #id
 
 def right_word_two():
@@ -203,6 +208,7 @@ right_friend_two = right_friend_two()
 right_friend_three = right_friend_three()
 
 right_word_one = right_word_one()
+right_word_one_b = right_word_one_b()
 right_word_two = right_word_two()
 right_word_three = right_word_three()
 right_five = right_five()
@@ -231,22 +237,21 @@ while hh==True:
         hh=False
 
 fj = True
-zj = " "
+friend = " "
 right_zt = 0
 
+right = str(right_one+config.config_two(theme_e,"right","name")+right_two)
 
 while fj==True:
   
-    friend = str(right_friend_one+config.config_three(theme_e,"right",str(friend_max),"from")+right_friend_two+config.config_three(theme_e,"right",str(friend_max),"name")+right_friend_three)+zj
+    friend = str(str(right_friend_one+config.config_three(theme_e,"right",str(friend_max),"from")+right_friend_two+config.config_three(theme_e,"right",str(friend_max),"name")+right_friend_three)+friend)
     friend_max = friend_max-1
 
-    right = str(right_one+config.config_two(theme_e,"right","name")+right_two)
-        
-
     if friend_max==0:
-        right_ru = right+friend
         fj=False
 
+
+right_ru = right+friend
 
 nb = True
 r_word = " "
@@ -254,7 +259,7 @@ word_max = int(config.config_two(theme_e,"word","max"))
 
 while nb==True:
             
-    r_word = r_word+str(right_word_one+config.config_three(theme_e,"word",str(word_max),"id")+right_word_two+config.config_three(theme_e,"word",str(word_max),"title")+right_word_three)
+    r_word = str(right_word_one_b+config.config_three(theme_e,"word",str(word_max),"id")+right_word_two+config.config_three(theme_e,"word",str(word_max),"title")+right_word_three)+r_word
     word_max = word_max-1
 
     if word_max==0:
@@ -267,6 +272,7 @@ write_seven,#总文章的开始
 word,
 write_eight,write_nine,
 right_ru,
+right_word_one,
 r_word,
 right_five,write_ten,write_ele,user,write_twl
 
