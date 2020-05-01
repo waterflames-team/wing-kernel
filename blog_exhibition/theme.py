@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 import config
-
+import markdown
 
 def write_one():
 
@@ -182,7 +182,10 @@ introduce = config.config_one(theme_e,"introduce")
 word_max = int(config.config_two(theme_e,"word","max"))
 friend_max = int(config.config_two(theme_e,"right","max"))
 
-
+word_md = open(theme_e+"/word/text.md",'r',encoding = "utf-8")
+word_md_nr = word_md.read()
+word_nr = markdown.markdown(word_md_nr, output_format='html5', extensions=['extra'])
+word_md.close()
 
 #模板数据
 write_one = write_one()
@@ -230,7 +233,7 @@ word = " "
 
 while hh==True:
             
-    word = word+str(write_word_one+config.config_three(theme_e,"word",str(word_max),"id")+write_word_two+config.config_three(theme_e,"word",str(word_max),"title")+write_word_three+config.config_three(theme_e,"word",str(word_max),"date")+write_word_four+config.config_three(theme_e,"word",str(word_max),"content")+write_word_five)
+    word = word+str(write_word_one+config.config_three(theme_e,"word",str(word_max),"id")+write_word_two+config.config_three(theme_e,"word",str(word_max),"title")+write_word_three+config.config_three(theme_e,"word",str(word_max),"date")+write_word_four+word_nr+write_word_five)
     word_max = word_max-1
 
     if word_max==0:
