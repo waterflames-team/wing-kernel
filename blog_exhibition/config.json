@@ -8,7 +8,7 @@
             "id": "1",
             "title": "hello",
             "date": "20200418",
-            "content": "欢迎使用wing，请自行查看仓库或文档了解使用方法"
+            "from": "hello.md"
         }
     },
     "right":{
