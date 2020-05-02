@@ -49,6 +49,7 @@
 3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
 ##### 温馨提示：文件夹名不可修改，仓库里是啥名就是啥名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
+##### 温馨提示：官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme.json中的主题名为文件夹名即可
 
 4. 如果你是windows系统，那在git的bash或cmd中输入`pip install markdown`，如果你是unix系统（macos、linux等），那在终端中输入`pip3 install markdown`
 ##### 温馨提示：这步有可能出错，如果出错请到readme的最下面找到`问题反馈与帮助`找到提问方法提问
@@ -65,6 +66,8 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
 ##### 温馨提示：文件夹名不可修改，仓库里是啥名就是啥名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
+##### 温馨提示：官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme.json中的主题名为文件夹名即可
+
 4. 如果你是windows系统，那在git的bash或cmd中输入`pip install markdown`，如果你是unix系统（macos、linux等），那在终端中输入`pip3 install markdown`
 ##### 温馨提示：这步有可能出错，如果出错请到readme的最下面找到`问题反馈与帮助`找到提问方法提问
 #### 然后你的前期的环境准备工作就完成了
