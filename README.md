@@ -125,6 +125,8 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 2. ![第二步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/4.png)
 
 ### ps：win打开命令行的方法是右键，git bash here。unix则要cd到这个目录
+### 温馨提示：新版的文件会生成在web文件夹下，如果要上传成果到github、gitee等平台上，请把这个文件夹下的东西全部上传，否则有可能出错
+##### 针对上面这行的补充：如果你看到web文件夹下还有.buyaoshan文件，请你不要删掉他，否则这个文件夹下没东西的话，会生成失败。上传到github、gitee等平台上时，你可选择把这个文件一起上传，也可不上传
 
 ## 以下是几个常用的命令
 1.  `python3 wing.py`:激活配置生效

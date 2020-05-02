@@ -223,7 +223,7 @@ write_twl = write_twl()
 '''
 
 
-f = open("index.html","w+",encoding = "utf-8")
+f = open("web/index.html","w+",encoding = "utf-8")
 
 hh = True
 word = " "
