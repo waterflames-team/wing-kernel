@@ -46,7 +46,7 @@
 1. 打开[发行版](https://gitee.com/lingkonggzs/lingkong-wing/releases)，下载`最新``正式`版本的wing的压缩包，然后解压，右键，git bash here
 ##### 不想安装git的用户可以打开cmd，cd到这个目录下，继续操作
 2.  输入`cd lingkong-wing`
-3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑主题名（到时候是以英文呈现）为文件夹名
+3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
 ##### 温馨提示：文件夹名不可修改，仓库里是啥名就是啥名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
 
@@ -62,14 +62,14 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ```
 ##### 不想安装git的用户可以下载zip，解压，然后打开cmd，cd到这个目录下，继续操作
 2.  输入`cd lingkong-wing`
-3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑主题名（到时候是以英文呈现）为文件夹名
+3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
 ##### 温馨提示：文件夹名不可修改，仓库里是啥名就是啥名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
 4. 如果你是windows系统，那在git的bash或cmd中输入`pip install markdown`，如果你是unix系统（macos、linux等），那在终端中输入`pip3 install markdown`
 ##### 温馨提示：这步有可能出错，如果出错请到readme的最下面找到`问题反馈与帮助`找到提问方法提问
 #### 然后你的前期的环境准备工作就完成了
 
-## 使用说明
+## 默认主题的使用说明
 #### 首先你要打开theme.json
 #### 把theme这项后面的引号里的blog-XXXX改成你复制过来主题的文件夹名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
@@ -128,10 +128,16 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ### 温馨提示：新版的文件会生成在web文件夹下，如果要上传成果到github、gitee等平台上，请把这个文件夹下的东西全部上传，否则有可能出错
 ##### 针对上面这行的补充：如果你看到web文件夹下还有.buyaoshan文件，请你不要删掉他，否则这个文件夹下没东西的话，会生成失败。上传到github、gitee等平台上时，你可选择把这个文件一起上传，也可不上传
 
+## 其他主题的使用方法可以打开那个主题的文件夹，里面会自带一个readme哦！
+## 其他主题的使用方法可以打开那个主题的文件夹，里面会自带一个readme哦！
+## 其他主题的使用方法可以打开那个主题的文件夹，里面会自带一个readme哦！
+#### ps：官方的其他主题也会放在项目中，但没被设置成默认主题，可以自行去theme.json改上主题文件夹名。官方的其他主题同上所述，也一样是放在那个主题的文件夹中的readme！
+
 ## 以下是几个常用的命令
 1.  `python3 wing.py`:激活配置生效
 2.  `python3 wing.py z`:查看使用指南
 3.  `python3 wing.py v`:查看版本号
+
 
 
 ## 错误说明
