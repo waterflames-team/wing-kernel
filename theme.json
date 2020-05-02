@@ -1,3 +1,5 @@
 {
-    "theme": "blog_exhibition"
+    "theme": "blog_succinct",
+    "别看了测试用的": "blog_exhibition",
+    "别看了还是测试用的": "blog_succinct"
 }
