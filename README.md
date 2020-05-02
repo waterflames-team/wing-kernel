@@ -24,7 +24,8 @@
 | 样式文件 	| 主题1 	|   index文件   |
 |      |        |    web文件夹（其他web文件）   |
 
-
+## 效果
+#### 欢迎前往[首批测试点（Leo韩）](http://leohan666.gitee.io/leohan/)查看公测用户用wing生成的博客
 
 ## 系统环境
 #### mac、linux和win都可以
