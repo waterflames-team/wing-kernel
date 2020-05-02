@@ -25,7 +25,10 @@
 |      |        |    web文件夹（其他web文件）   |
 
 ## 效果
+### 实际使用效果：
 #### 欢迎前往[首批测试点（Leo韩）](https://leo-blog.github.io/)查看公测用户用wing生成的博客
+### 自带config的生成效果：
+#### 1、[blog_exhibition](https://lingkonggzs.gitee.io/lingkong-wing-theme/1/index.html)效果
 
 ## 系统环境
 #### mac、linux和win都可以
