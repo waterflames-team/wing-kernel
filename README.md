@@ -93,6 +93,7 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 10. `right-1\2\3-id`:链接id
 11. `right-1\2\3-id`:链接名字
 12. `right-1\2\3-id`:链接跳转地址（本地与网络上的均可）
+#### 你可以根据以上的描述修改/添加json文件
 
 ### 如何新建文章：
 1. 打开config.json
