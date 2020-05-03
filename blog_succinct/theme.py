@@ -12,6 +12,7 @@ def index(Which):
     two = '的博客</title><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body><!--head、small--><div class="container-fluid"><div class="row"><nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"></div></nav></div><div class="container-fluid"><div class="row"><nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"></div></nav></div><div class="container-fluid"><div class="row"><nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"></div></nav></div><!--head、small--><nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="#">'
     #leo
     three = '的博客</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item active"><a class="nav-link" href="index.html">首页</a></li><li class="nav-item"><a class="nav-link" href="word/index.html">文章</a></li><li class="nav-item"><a class="nav-link" href="jieshao.html">介绍<span class="sr-only">(current)</span></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
+    three_js = '的博客</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="index.html">首页</a></li><li class="nav-item"><a class="nav-link" href="word/index.html">文章</a></li><li class="nav-item active"><a class="nav-link" href="jieshao.html">介绍<span class="sr-only">(current)</span></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
     #友情链接
     three_o = '</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">'
     
@@ -29,15 +30,31 @@ def index(Which):
 
     three_t ='</div></li></ul></div></nav>'
 
-    
+    #index_du
     three_j = '<div class="alert alert-success" role="alert"><h4 class="alert-heading">'
     #leo
     four = '的博客</h4><hr><p>欢迎来到'
     #leo
     five = '的博客</p><p>这里就是博客的首页了</p></div><hr><div class="card"><div class="card-body"><h5 class="card-title">文章</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">查看全部文章</p><a href="word/index.html" class="card-link">跳转——>></a></div></div><br><div class="card"><div class="card-body"><h5 class="card-title">介绍</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">介绍介绍'
     #leo
-    six = '</p><a href="jieshao.html" class="card-link">跳转——>></a></div></div>
+    six = '</p><a href="jieshao.html" class="card-link">跳转——>></a></div></div>'
+    #index_du
 
+    #jieshi_du
+    jieshi_one = '<div class="alert alert-success" role="alert"><h4 class="alert-heading">'
+    #leo韩
+    jieshi_two = '的博客</h4><hr><p>欢迎来到'
+    #Leo韩
+    jieshi_three = '的博客</p><p>这里就是'
+    #Leo韩
+    jieshi_four = '的介绍了</p></div><div class="alert alert-info" role="alert"><h4 class="alert-heading"><img src="'
+    #头像
+    jieshi_five = '" alt="" width="70px" class="rounded-circle">'
+    #Leo韩
+    jieshi_six = '</h4><hr><p>'
+    #个人介绍
+    jieshi_seven = '</p></div>'
+    #jieshi_du
 
     six_t = '<br><hr><footer class="bd-footer text-muted"><div class="container-fluid p-3 p-md-5"><p>© 2020 '
     #leo
@@ -49,20 +66,30 @@ def index(Which):
         return one
     if which==2:
         return two
+
+    #nav
     if which==3:
         return three
+    if which=="3_js":
+        return three_js
+    #nav
+
     if which==31:
         return three_o
 
+    #friend
     if which=="f_1":
         return friend_one
     if which=="f_2":
         return friend_two
     if which=="f_3":
         return friend_three
-    
+    #friend
+
     if which==32:
         return three_t
+
+    #index_du
     if which==33:
         return three_j
     if which==4:
@@ -71,82 +98,32 @@ def index(Which):
         return five
     if which==6:
         return six
+    #index_du
+
+    #jieshao_du
+    if which=="js_1":
+        return jieshi_one
+    if which=="js_2":
+        return jieshi_two
+    if which=="js_3":
+        return jieshi_three
+    if which=="js_4":
+        return jieshi_four
+    if which=="js_5":
+        return jieshi_five
+    if which=="js_6":
+        return jieshi_six
+    if which=="js_7":
+        return jieshi_seven
+    #jiehsao_du
+
+    if which==62:
+        return six_t
     if which==7:
         return seven
     else:
         print("错误：调用出错！！！")
 
-def jieshao(Which):
-    
-    #定义数据
-    one = '<html><head><title>'
-    #Leo
-    two = '的博客</title><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body><!--head、small--><div class="container-fluid"><div class="row"><nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"></div></nav></div><div class="container-fluid"><div class="row"><nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"></div></nav></div><div class="container-fluid"><div class="row"><nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"></div></nav></div<!--head、small-->'
-    two_o = '<nav class="navbar navbar-expand-lg navbar-light bg-light">'
-    two_t = '<a class="navbar-brand" href="#">'
-    #Leo
-    three = '的博客</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="index.html">首页</a></li><li class="nav-item"><a class="nav-link" href="word/index.html">文章</a></li><li class="nav-item active"><a class="nav-link" href="jieshao.html">介绍<span class="sr-only">(current)</span></a></li>'
-    
-    three_o = '<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
-    #友情链接
-    three_t = '</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">'
-    #friend
-    
-    four = '</div></div></li></ul></div></nav></nav><div class="alert alert-success" role="alert"><h4 class="alert-heading">'
-    #leo韩
-    five = '的博客</h4><hr><p>欢迎来到'
-    #Leo韩
-    six = '的博客</p><p>这里就是'
-    #Leo韩
-    seven = '的介绍了</p></div><div class="alert alert-info" role="alert"><h4 class="alert-heading"><img src="'
-    #头像
-    eight = '" alt="" width="70px" class="rounded-circle">'
-    #Leo韩
-    nine = '</h4><hr><p>'
-    #个人介绍
-    ten = '</p></div><br><hr><footer class="bd-footer text-muted"><div class="container-fluid p-3 p-md-5"><p>© 2020 '
-    #Leo韩
-    ele = ' | Make by wing<div class="d-flex align-items-center"><a href="#top" target="_self">返回顶部</a></div></p></div></footer><!--head、small--></div></div></div><!--head、small--><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></body></html>'
-
-
-    #取数据判定
-    which = Which
-    if which==1:
-        return one
-    if which==2:
-        return two
-
-    if which==21:
-        return two_o
-    if which==22:
-        return two_t
-            
-    if which==3:
-        return three
-
-    if which==31:
-        return three_o
-    if which==32:
-        return three_t
-
-    if which==4:
-        return four
-    if which==5:
-        return five
-    if which==6:
-        return six
-    if which==7:
-        return seven
-    if which==8:
-        return eight
-    if which==9:
-        return nine
-    if which==10:
-        return ten
-    if which==11:
-        return ele
-    else:
-        print("错误：调用出错！！！")
 
 #执行部分
 
@@ -191,7 +168,9 @@ while fj==True:
 parts = [
 index(1),user,index(2),user,index(3),config.config_two(theme_e,"right","name"),index(31),
 friend,
-index(32),index(33),user,index(4),user,index(5),user,index(6),index(7)
+index(32),
+index(33),user,index(4),user,index(5),user,index(6),
+index(62),user,index(7)
 ]
 
 write_all = ''.join(parts)
@@ -206,9 +185,11 @@ jieshao
 j = open("web/jieshao.html","w+",encoding = "utf-8")
 
 js = [
-index(1),user,index(2),user,index(3),config.config_two(theme_e,"right","name"),index(31),
+index(1),user,index(2),user,index("3_js"),config.config_two(theme_e,"right","name"),index(31),
 friend,
-index(32),index(33),user,index(4),user,index(5),user,index(6),index(7)
+index(32),
+index("js_1"),user,index("js_2"),user,index("js_3"),user,index("js_4"),photo,index("js_5"),user,index("js_6"),introduce,index("js_7"),
+index(62),user,index(7)
 ]
 
 
