@@ -46,7 +46,7 @@
 #### 作者的python为3.7.3，如果你用你下载的python3运行出现错误，可以试一试使用与作者相同的python3.7.3
 
 ### 正式版本的安装：
-1. 打开[发行版](https://gitee.com/lingkonggzs/lingkong-wing/releases)，下载`最新``正式`版本的wing的压缩包，然后解压，右键，git bash here
+1. 打开[发行版](https://gitee.com/lingkonggzs/lingkong-wing-kernel/releases)，下载`最新``正式`版本的wing的压缩包，然后解压，右键，git bash here
 ##### 不想安装git的用户可以打开cmd，cd到这个目录下，继续操作
 2.  输入`cd lingkong-wing`
 3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
@@ -62,7 +62,7 @@
 ### 开发版本的安装：
 1. 在要下载的地方右键，git bash here（前提是你有装git）输入并执行：（Unix的系统可以在终端中cd到你想要装的地方执行）
 ```
-git clone https://gitee.com/lingkonggzs/lingkong-wing.git
+git clone https://gitee.com/lingkonggzs/lingkong-wing-kernel.git
 ```
 ##### 不想安装git的用户可以下载zip，解压，然后打开cmd，cd到这个目录下，继续操作
 2.  输入`cd lingkong-wing`
@@ -127,9 +127,9 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 ```
 
 ### 如何新建友链：
-1. ![第一步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/3.png)
+1. ![第一步](https://gitee.com/lingkonggzs/lingkong-wing-kernel/raw/master/readme/3.png)
 
-2. ![第二步](https://gitee.com/lingkonggzs/lingkong-wing/raw/master/readme/4.png)ps：这幅图中`python3 wing.py s`为旧版操作，新版`python3 wing.py`即可
+2. ![第二步](https://gitee.com/lingkonggzs/lingkong-wing-kernel/raw/master/readme/4.png)ps：这幅图中`python3 wing.py s`为旧版操作，新版`python3 wing.py`即可
 
 ### ps：win打开命令行的方法是右键，git bash here。（也可以双击打开）unix则要cd到这个目录
 ### 温馨提示：新版的文件会生成在web文件夹下，如果要上传成果到github、gitee等平台上，请把这个文件夹下的东西全部上传，否则有可能出错
@@ -197,7 +197,7 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing.git
 
 ## 问题反馈与帮助
 ### 方法一：提issues（荐）
-##### 打开[这个页面](https://gitee.com/lingkonggzs/lingkong-wing/issues)，然后点击新建issues，接着按照模板填好issues内容，最后点创建就好
+##### 打开[这个页面](https://gitee.com/lingkonggzs/lingkong-wing-kernel/issues)，然后点击新建issues，接着按照模板填好issues内容，最后点创建就好
 
 ### 方法二：联系作者
 
