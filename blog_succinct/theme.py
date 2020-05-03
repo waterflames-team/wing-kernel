@@ -11,8 +11,9 @@ def index(Which):
     #Leo
     two = '的博客</title><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body><!--head、small--><div class="container-fluid"><div class="row"><nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"></div></nav></div><div class="container-fluid"><div class="row"><nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"></div></nav></div><div class="container-fluid"><div class="row"><nav class="col-md-2 d-none d-md-block bg-light sidebar"><div class="sidebar-sticky"></div></nav></div><!--head、small--><nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="#">'
     #leo
-    three = '的博客</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item active"><a class="nav-link" href="index.html">首页</a></li><li class="nav-item"><a class="nav-link" href="word/index.html">文章</a></li><li class="nav-item"><a class="nav-link" href="jieshao.html">介绍<span class="sr-only">(current)</span></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
-    three_js = '的博客</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="index.html">首页</a></li><li class="nav-item"><a class="nav-link" href="word/index.html">文章</a></li><li class="nav-item active"><a class="nav-link" href="jieshao.html">介绍<span class="sr-only">(current)</span></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
+    three = '的博客</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item active"><a class="nav-link" href="index.html">首页</a></li><li class="nav-item"><a class="nav-link" href="word.html">文章</a></li><li class="nav-item"><a class="nav-link" href="jieshao.html">介绍<span class="sr-only">(current)</span></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
+    three_js = '的博客</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="index.html">首页</a></li><li class="nav-item"><a class="nav-link" href="word.html">文章</a></li><li class="nav-item active"><a class="nav-link" href="jieshao.html">介绍<span class="sr-only">(current)</span></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
+    three_wd = '的博客</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="index.html">首页</a></li><li class="nav-item active"><a class="nav-link" href="word.html">文章</a></li><li class="nav-item"><a class="nav-link" href="jieshao.html">介绍<span class="sr-only">(current)</span></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
     #友情链接
     three_o = '</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">'
     
@@ -40,7 +41,7 @@ def index(Which):
     six = '</p><a href="jieshao.html" class="card-link">跳转——>></a></div></div>'
     #index_du
 
-    #jieshi_du
+    #jieshi_du---
     jieshi_one = '<div class="alert alert-success" role="alert"><h4 class="alert-heading">'
     #leo韩
     jieshi_two = '的博客</h4><hr><p>欢迎来到'
@@ -54,7 +55,38 @@ def index(Which):
     jieshi_six = '</h4><hr><p>'
     #个人介绍
     jieshi_seven = '</p></div>'
-    #jieshi_du
+    #jieshi_du---
+
+    #wd_du---
+    wd_one = '<div class="alert alert-success" role="alert"><h4 class="alert-heading">'
+    #Leo韩
+    wd_two = '的博客</h4><hr><p>欢迎来到'
+    #Leo
+    wd_three = '的博客</p><p>这里就是博客的文章汇集地了</p></div><div class="row">'
+    
+    ##-wdxh-
+    wd_lb_one = '<div class="col-sm-6" style="margin: 10 0 0 0"><div class="card"><div class="card-body"><h5 class="card-title">'
+    #题目
+    wd_lb_two = '</h5><p class="card-text">'
+    #概要
+    wd_lb_three = '</p><a href="'
+    #id(.html)
+    wd_lb_four = '" class="btn btn-primary">查看</a></div></div></div>'
+    ##-wdxh-
+
+    wd_four = '</div>'
+    #wd_du---
+
+    #word_du---
+    #直接进循环
+    word_one = '<div class="alert alert-success" role="alert"><h4 class="alert-heading">'
+    #标题
+    word_two = '</h4><hr><p>'
+    #简述
+    word_three = '</p></div><div class="container-fluid"><div class="row"><main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div data-spy="scroll" data-target="#navbar-example3" data-offset="0"><p>'
+    #内容
+    word_four = '</p></div></main></div></div>'
+    #word_du---
 
     six_t = '<br><hr><footer class="bd-footer text-muted"><div class="container-fluid p-3 p-md-5"><p>© 2020 '
     #leo
@@ -72,6 +104,8 @@ def index(Which):
         return three
     if which=="3_js":
         return three_js
+    if which=="3_wd":
+        return three_wd
     #nav
 
     if which==31:
@@ -116,6 +150,37 @@ def index(Which):
     if which=="js_7":
         return jieshi_seven
     #jiehsao_du
+    
+    #wd_du
+    if which=="wd_1":
+        return wd_one
+    if which=="wd_2":
+        return wd_two
+    if which=="wd_3":
+        return wd_three
+
+    if which=="lb_1":
+        return wd_lb_one
+    if which=="lb_2":
+        return wd_lb_two
+    if which=="lb_3":
+        return wd_lb_three
+    if which=="lb_4":
+        return wd_lb_four
+
+    if which=="wd_4":
+        return wd_four
+    #wd_du
+    #word_du
+    if which=="word_1":
+        return word_one
+    if which=="word_2":
+        return word_two
+    if which=="word_3":
+        return word_three
+    if which=="word_4":
+        return word_four
+    #word_du
 
     if which==62:
         return six_t
@@ -199,6 +264,59 @@ j.write(g_js)
 j.close()
 
 
+'''
+word
+'''
+
+ld = True
+lb = " "
+wd = " "
+
+while ld==True:#文章循环
+    #列表
+    lb = str(str(index("lb_1")+config.config_three(theme_e,"word",str(word_max),"title")+index("lb_2")+config.config_three(theme_e,"word",str(word_max),"generalization")+index("lb_3")+str(word_max)+'.html'+index("lb_4"))+lb)
+    #文章
+    j = open("web/"+str(word_max)+".html","w+",encoding = "utf-8")
+
+    word_md = open(theme_e+"/word/"+config.config_three(theme_e,"word",str(word_max),"from"),'r',encoding = "utf-8")
+    word_md_nr = word_md.read()
+    word_nr = markdown.markdown(word_md_nr, output_format='html5', extensions=['extra'])
+    word_md.close()
+
+    js = [
+    index(1),user,index(2),user,index("3_wd"),config.config_two(theme_e,"right","name"),index(31),
+    friend,
+    index(32),
+    index("word_1"),config.config_three(theme_e,"word",str(word_max),"title"),index("word_2"),config.config_three(theme_e,"word",str(word_max),"generalization"),index("word_3"),word_nr,index("word_4"),
+    index(62),user,index(7)
+    ]
+
+    g_js = ''.join(js)
+    g_js = str(g_js)
+    j.write(g_js)
+    j.close()
+    #判定
+    word_max = word_max-1
+
+    if word_max==0:
+        ld=False
+
+
+j = open("web/word.html","w+",encoding = "utf-8")
+
+js = [
+index(1),user,index(2),user,index("3_wd"),config.config_two(theme_e,"right","name"),index(31),
+friend,
+index(32),
+index("wd_1"),user,index("wd_2"),user,index("wd_3"),lb,index("wd_4"),
+index(62),user,index(7)
+]
+
+
+g_js = ''.join(js)
+g_js = str(g_js)
+j.write(g_js)
+j.close()
 
 #参考
 '''原生成方法
