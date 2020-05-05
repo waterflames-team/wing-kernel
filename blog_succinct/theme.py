@@ -36,7 +36,7 @@ def index(Which):
     #leo
     four = '的博客</h4><hr><p>欢迎来到'
     #leo
-    five = '的博客</p><p>这里就是博客的首页了</p></div><hr><div class="card"><div class="card-body"><h5 class="card-title">文章</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">查看全部文章</p><a href="word/index.html" class="card-link">跳转——>></a></div></div><br><div class="card"><div class="card-body"><h5 class="card-title">介绍</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">介绍介绍'
+    five = '的博客</p><p>这里就是博客的首页了</p></div><hr><div class="card"><div class="card-body"><h5 class="card-title">文章</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">查看全部文章</p><a href="word.html" class="card-link">跳转——>></a></div></div><br><div class="card"><div class="card-body"><h5 class="card-title">介绍</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">介绍介绍'
     #leo
     six = '</p><a href="jieshao.html" class="card-link">跳转——>></a></div></div>'
     #index_du
