@@ -1,7 +1,7 @@
 # lingkong-wing-kernel（灵翼）
 
 ## 介绍
-##### 灵翼是一个由非凡小王开发，折腾调协助维护的基于python3语言的一键建站系统，此版本为wing内核，最终版本请等此版本第三代时一并发布的正式版（lingkong-wing）
+##### 灵翼是一个Epeiuss开发，折腾调协助维护的基于python3语言的一键建站系统，此版本为wing内核，最终版本请等此版本第三代时一并发布的正式版（lingkong-wing）
 
 ## 软件架构
 
@@ -28,7 +28,7 @@
 ### 实际使用效果：
 #### 欢迎前往[首批测试点（Leo韩）](https://leo-blog.github.io/)查看公测用户用wing生成的博客
 ### 自带config的生成效果：
-#### 1、[blog_exhibition](https://lingkonggzs.gitee.io/lingkong-wing-theme/1/index.html)效果
+#### 1、[blog_exhibition](https://lkteam.gitee.io/lingkong-wing-theme/1/index.html)效果
 
 ## 系统环境
 #### mac、linux和win都可以
@@ -46,10 +46,10 @@
 #### 作者的python为3.7.3，如果你用你下载的python3运行出现错误，可以试一试使用与作者相同的python3.7.3
 
 ### 正式版本的安装：
-1. 打开[发行版](https://gitee.com/lingkonggzs/lingkong-wing-kernel/releases)，下载`最新``正式`版本的wing的压缩包，然后解压，右键，git bash here
+1. 打开[发行版](https://gitee.com/lkteam/lingkong-wing-kernel/releases)，下载`最新正式`版本的wing的压缩包，然后解压，右键，git bash here
 ##### 不想安装git的用户可以打开cmd，cd到这个目录下，继续操作
 2.  输入`cd lingkong-wing`
-3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
+3.  去往[主题仓库](https://gitee.com/lkteam/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
 ##### 温馨提示：文件夹名不可修改，仓库里是啥名就是啥名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
 ##### 温馨提示：官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme.json中的主题名为文件夹名即可
@@ -64,14 +64,15 @@ ps:可以在后方添加 `-i https://mirrors.aliyun.com/pypi/simple` 临时换�
 ### 开发版本的安装：
 1. 在要下载的地方右键，git bash here（前提是你有装git）输入并执行：（Unix的系统可以在终端中cd到你想要装的地方执行）
 ```
-git clone https://gitee.com/lingkonggzs/lingkong-wing-kernel.git
+git clone https://gitee.com/lkteam/lingkong-wing-kernel.git
 ```
 ##### 不想安装git的用户可以下载zip，解压，然后打开cmd，cd到这个目录下，继续操作
 2.  输入`cd lingkong-wing`
-3.  去往[主题仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
-##### 温馨提示：文件夹名不可修改，仓库里是啥名就是啥名
-##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
-##### 温馨提示：官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme.json中的主题名为文件夹名即可
+3.  去往[主题仓库](https://gitee.com/lkteam/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
+##### 温馨提示：
+- 文件夹名不可修改，仓库里是啥名就是啥名
+- 以上这步可以不做，因为wing有一款自带的主题
+- 官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme.json中的主题名为文件夹名即可
 
 4. 如果你是windows系统，那在git的bash或cmd中输入`pip install markdown`，如果你是unix系统（macos、linux等），那在终端中输入`pip3 install markdown`
 ##### 温馨提示：这步有可能出错，如果出错请到readme的最下面找到`问题反馈与帮助`找到提问方法提问
@@ -84,7 +85,7 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing-kernel.git
 #### 然后打开你的主题文件夹，打开文件夹下的config.json配置上你喜欢的东西
 ### 配置内容说明：
 1. `user`:用户称呼
-2. `photo`:头像地址（本地与网络上的均可）
+2. `photo`:头像地址（本地与网络上的均可,无则写#）
 3. `word-max`:最大的文章值
 4. `word-1\2\3-id`:文章id
 5. `word-1\2\3-title`:文章标题
@@ -129,9 +130,9 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing-kernel.git
 ```
 
 ### 如何新建友链：
-1. ![第一步](https://gitee.com/lingkonggzs/lingkong-wing-kernel/raw/master/readme/3.png)
+1. ![第一步](https://gitee.com/lkteam/lingkong-wing-kernel/raw/master/readme/3.png)
 
-2. ![第二步](https://gitee.com/lingkonggzs/lingkong-wing-kernel/raw/master/readme/4.png)ps：这幅图中`python3 wing.py s`为旧版操作，新版`python3 wing.py`即可
+2. ![第二步](https://gitee.com/lkteam/lingkong-wing-kernel/raw/master/readme/4.png)ps：这幅图中`python3 wing.py s`为旧版操作，新版`python3 wing.py`即可
 
 ### ps：win打开命令行的方法是右键，git bash here。（也可以双击打开）unix则要cd到这个目录
 ### 温馨提示：新版的文件会生成在web文件夹下，如果要上传成果到github、gitee等平台上，请把这个文件夹下的东西全部上传，否则有可能出错
@@ -171,7 +172,7 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing-kernel.git
 
 ## 前线开发状态
 
-#### 开发协作群开发主题中：[跳转仓库](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)
+#### 开发协作群开发主题中：[跳转仓库](https://gitee.com/lkteam/lingkong-wing-theme.git)
 
 #### 已适配好默认主题
 
@@ -182,24 +183,24 @@ git clone https://gitee.com/lingkonggzs/lingkong-wing-kernel.git
 ### 开发者计划的两大方面的制作
 1. html
 #### 制作一个html的主题，要求原创、美观
-#### html提交到[theme](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)的仓库下的result新建文件夹名叫：类型_名字，如blog_exhibition
+#### html提交到[theme](https://gitee.com/lkteam/lingkong-wing-theme.git)的仓库下的result新建文件夹名叫：类型_名字，如blog_exhibition
 2. py
 #### 第二个要模仿默认主题的theme.py文件以及config.json文件，制作一款主题
 #### 要求：import后就可以生成好，同样生成的结果要原创、美观
 #### 温馨提示：读取json文件可以import config，然后通过运行主程序来运行这个主题文件进行测试
-#### 做好之后提交到提交到[theme](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)的仓库下新建一个文件夹名叫：类型_名字，如blog_exhibition
+#### 做好之后提交到提交到[theme](https://gitee.com/lkteam/lingkong-wing-theme.git)的仓库下新建一个文件夹名叫：类型_名字，如blog_exhibition
 ### 以上两大方面，第一个方面只要求制作html，较为简单，但是官方的适配时间要很久。第二个方面是制作一个完整主题，直接就可以使用，无bug官方可以立刻上线，与大家见面
 ### 欢迎参与开发者计划！！！
 
 #### 提交方法
-1.  Fork [theme](https://gitee.com/lingkonggzs/lingkong-wing-theme.git)这个仓库仓库
+1.  Fork [theme](https://gitee.com/lkteam/lingkong-wing-theme.git)这个仓库仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
 
 ## 问题反馈与帮助
 ### 方法一：提issues（荐）
-##### 打开[这个页面](https://gitee.com/lingkonggzs/lingkong-wing-kernel/issues)，然后点击新建issues，接着按照模板填好issues内容，最后点创建就好
+##### 打开[这个页面](https://gitee.com/lkteam/lingkong-wing-kernel/issues)，然后点击新建issues，接着按照模板填好issues内容，最后点创建就好
 
 ### 方法二：联系作者
 

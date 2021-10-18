@@ -19,15 +19,23 @@ def write_three():
 
     return write_three
 
-def write_four():
+def write_four_a():#有
 
     write_four = '的博客</p><p>这里就是博客的首页了</p></div><br><div class="alert alert-info" role="alert"><h4 class="alert-heading"><img src="'
 
     return write_four
 
+def write_four_b():#无
+
+    write_four = '的博客</p><p>这里就是博客的首页了</p></div><br><div class="alert alert-info" role="alert"><h4 class="alert-heading">'
+
+    return write_four
+
+#TODO—NOTE a代表有头像，b代表没有头像
+
 def write_five():
 
-    #https://gitee.com/ffxw0720/img/raw/master/leo.JPG
+    #https://gitee.com/epeiusss/img/raw/master/leo.JPG
     write_five = '" alt="" width="70px" class="rounded-circle">'
    
 
@@ -161,12 +169,8 @@ def write_twl():
    
     return write_twl
 
-#彩蛋：
-#其实我不要定义的，定义是因为原来主文件在wing.py，后来因为懒就留下了这个旧版的方法，其实不影响使用啦，两个都是定义的过程，一个更直接，一个有点绕，但成果差不多啦。第二个主题因为时间我会直接用更快的办法的
 
-
-
-#主要部分
+#替换数据部分
 
 
 theme_e = "blog_exhibition"
@@ -190,7 +194,8 @@ friend_max = int(config.config_two(theme_e,"right","max"))
 write_one = write_one()
 write_two = write_two()
 write_three = write_three()
-write_four = write_four()
+write_four_a = write_four_a()
+write_four_b = write_four_b()
 write_five = write_five()
 write_six = write_six()
 write_seven = write_seven()
@@ -272,18 +277,38 @@ while nb==True:
     if word_max==0:
         nb=False
 
-parts = [
 
-write_one,user,write_two,user,write_three,user,write_four,photo,write_five,user,write_six,introduce,#介绍
-write_seven,#总文章的开始
-word,
-write_eight,write_nine,
-right_ru,
-right_word_one,
-r_word,
-right_five,write_ten,write_ele,user,write_twl
+#TODO没有图片的时候去掉图片
 
-]
+if photo == "#":
+
+    print("无图")
+    parts = [
+
+    write_one,user,write_two,user,write_three,user,write_four_b,user,write_six,introduce,#介绍
+    write_seven,#总文章的开始
+    word,
+    write_eight,write_nine,
+    right_ru,
+    right_word_one,
+    r_word,
+    right_five,write_ten,write_ele,user,write_twl
+
+    ]
+
+else:
+    parts = [
+
+    write_one,user,write_two,user,write_three,user,write_four_a,photo,write_five,user,write_six,introduce,#介绍
+    write_seven,#总文章的开始
+    word,
+    write_eight,write_nine,
+    right_ru,
+    right_word_one,
+    r_word,
+    right_five,write_ten,write_ele,user,write_twl
+
+    ]
 
 write_all = ''.join(parts)
 write_all = str(write_all)
