@@ -1,7 +1,7 @@
 {
-    "user": "Epeiuss",
-    "photo": "#",
-    "introduce": "Epeiuss是灵空的创始人,也是wing的作者吖~",
+    "user": "非凡小王",
+    "photo": "https://gitee.com/ffxw0720/img/raw/master/IMG_3062.PNG",
+    "introduce": "非凡小王是灵空的创始人,也是wing的作者吖~",
     "word":{
         "max": "1",
         "1":{
@@ -16,8 +16,8 @@
         "max": "1",
         "1": {
             "id": "1",
-            "name": "Epeiuss的真正博客",
-            "from": "https://www.ffxw0720.cn"
+            "name": "非凡小王的真正博客",
+            "from": "https://www.ffxw0720.club"
         }
     }
 }
