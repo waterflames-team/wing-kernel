@@ -48,7 +48,10 @@ def index(Which):
     #Leo韩
     jieshi_three = '的博客</p><p>这里就是'
     #Leo韩
-    jieshi_four = '的介绍了</p></div><div class="alert alert-info" role="alert"><h4 class="alert-heading"><img src="'
+    jieshi_four_a = '的介绍了</p></div><div class="alert alert-info" role="alert"><h4 class="alert-heading"><img src="'
+    
+    jieshi_four_b = '的介绍了</p></div><div class="alert alert-info" role="alert"><h4 class="alert-heading">'
+    #TODO 无图
     #头像
     jieshi_five = '" alt="" width="70px" class="rounded-circle">'
     #Leo韩

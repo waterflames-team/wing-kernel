@@ -31,7 +31,7 @@ def write_four_b():#无
 
     return write_four
 
-#TODO—NOTE a代表有头像，b代表没有头像
+#TODO--NOTE a代表有头像，b代表没有头像
 
 def write_five():
 
@@ -278,7 +278,7 @@ while nb==True:
         nb=False
 
 
-#TODO没有图片的时候去掉图片
+#TODO--DONE 没有图片的时候去掉图片
 
 if photo == "#":
 
