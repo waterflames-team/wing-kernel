@@ -55,6 +55,8 @@
 ##### 温馨提示：官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme.json中的主题名为文件夹名即可
 
 4. 如果你是windows系统，那在git的bash或cmd中输入`pip install markdown`，如果你是unix系统（macos、linux等），那在终端中输入`pip3 install markdown`
+
+ps:可以在后方添加 `-i https://mirrors.aliyun.com/pypi/simple` 临时换源
 ##### 温馨提示：这步有可能出错，如果出错请到readme的最下面找到`问题反馈与帮助`找到提问方法提问
 #### 然后你的前期的环境准备工作就完成了
 
