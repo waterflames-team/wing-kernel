@@ -141,8 +141,10 @@ def index(Which):
         return jieshi_two
     if which=="js_3":
         return jieshi_three
-    if which=="js_4":
-        return jieshi_four
+    if which=="js_4_a":
+        return jieshi_four_a #有图
+    if which=="js_4_b":
+        return jieshi_four_b #无图
     if which=="js_5":
         return jieshi_five
     if which=="js_6":
@@ -249,14 +251,28 @@ jieshao
 '''
 j = open("web/jieshao.html","w+",encoding = "utf-8")
 
-js = [
-index(1),user,index(2),user,index("3_js"),config.config_two(theme_e,"right","name"),index(31),
-friend,
-index(32),
-index("js_1"),user,index("js_2"),user,index("js_3"),user,index("js_4"),photo,index("js_5"),user,index("js_6"),introduce,index("js_7"),
-index(62),user,index(7)
-]
+#TODO 这里是图片加入的部分
 
+if photo == "#":
+
+    print("无图")
+
+    js = [
+    index(1),user,index(2),user,index("3_js"),config.config_two(theme_e,"right","name"),index(31),
+    friend,
+    index(32),
+    index("js_1"),user,index("js_2"),user,index("js_3"),user,index("js_4_b"),user,index("js_6"),introduce,index("js_7"),
+    index(62),user,index(7)
+    ]
+
+else:
+    js = [
+    index(1),user,index(2),user,index("3_js"),config.config_two(theme_e,"right","name"),index(31),
+    friend,
+    index(32),
+    index("js_1"),user,index("js_2"),user,index("js_3"),user,index("js_4_a"),photo,index("js_5"),user,index("js_6"),introduce,index("js_7"),
+    index(62),user,index(7)
+    ]
 
 g_js = ''.join(js)
 g_js = str(g_js)
