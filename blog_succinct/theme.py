@@ -36,7 +36,7 @@ def index(Which):
     #leo
     four = '的博客</h4><hr><p>欢迎来到'
     #leo
-    five = '的博客</p><p>这里就是博客的首页了</p></div><hr><div class="card"><div class="card-body"><h5 class="card-title">文章</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">查看全部文章</p><a href="word.html" class="card-link">跳转——>></a></div></div><br><div class="card"><div class="card-body"><h5 class="card-title">介绍</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">介绍介绍'
+    five = '的博客</p><p>这里就是博客的首页了</p></div><hr><div class="card"><div class="card-body"><h5 class="card-title">文章</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">查看全部文章</p><a href="word/index.html" class="card-link">跳转——>></a></div></div><br><div class="card"><div class="card-body"><h5 class="card-title">介绍</h5><h6 class="card-subtitle mb-2 text-muted"></h6><p class="card-text">介绍介绍'
     #leo
     six = '</p><a href="jieshao.html" class="card-link">跳转——>></a></div></div>'
     #index_du
@@ -48,10 +48,7 @@ def index(Which):
     #Leo韩
     jieshi_three = '的博客</p><p>这里就是'
     #Leo韩
-    jieshi_four_a = '的介绍了</p></div><div class="alert alert-info" role="alert"><h4 class="alert-heading"><img src="'
-    
-    jieshi_four_b = '的介绍了</p></div><div class="alert alert-info" role="alert"><h4 class="alert-heading">'
-    #TODO 无图
+    jieshi_four = '的介绍了</p></div><div class="alert alert-info" role="alert"><h4 class="alert-heading"><img src="'
     #头像
     jieshi_five = '" alt="" width="70px" class="rounded-circle">'
     #Leo韩

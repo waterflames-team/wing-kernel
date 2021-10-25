@@ -44,8 +44,8 @@ print('''
 ╭──────────────────────────────────────────────────────────────╮
 │                                                              │
 │                        lingkong-wing                         │
-│      gitee: https://gitee.com/lkteam/lingkong-wing           │
-│                  by Epeiuss & lingkong                      │
+│      gitee: https://gitee.com/lingkonggzs/lingkong-wing      │
+│                  by ffxw0720 & lingkong                      │
 │                                                              │
 ╰──────────────────────────────────────────────────────────────╯
 ''')
