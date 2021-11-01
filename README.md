@@ -1,4 +1,4 @@
-# lingkong-wing-kernel（灵翼）
+# Wing-kernel（灵翼）
 
 ## 介绍
 ##### 灵翼是一个Epeiuss开发，折腾调协助维护的基于python3语言的一键建站系统，此版本为wing内核，最终版本请等此版本第三代时一并发布的正式版（lingkong-wing）
@@ -46,13 +46,13 @@
 #### 作者的python为3.7.3，如果你用你下载的python3运行出现错误，可以试一试使用与作者相同的python3.7.3
 
 ### 正式版本的安装：
-1. 打开[发行版](https://gitee.com/lkteam/lingkong-wing-kernel/releases)，下载`最新正式`版本的wing的压缩包，然后解压，右键，git bash here
+1. 打开[发行版](https://gitee.com/lkteam/wing-kernel/releases)，下载`最新正式`版本的wing的压缩包，然后解压，右键，git bash here
 ##### 不想安装git的用户可以打开cmd，cd到这个目录下，继续操作
 2.  输入`cd lingkong-wing`
-3.  去往[主题仓库](https://gitee.com/lkteam/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
+3.  去往[主题仓库](https://gitee.com/lkteam/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme/theme.json中的主题名为文件夹名
 ##### 温馨提示：文件夹名不可修改，仓库里是啥名就是啥名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
-##### 温馨提示：官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme.json中的主题名为文件夹名即可
+##### 温馨提示：官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme/theme.json中的主题名为文件夹名即可
 
 4. 如果你是windows系统，那在git的bash或cmd中输入`pip install markdown`，如果你是unix系统（macos、linux等），那在终端中输入`pip3 install markdown`
 
@@ -64,22 +64,22 @@ ps:可以在后方添加 `-i https://mirrors.aliyun.com/pypi/simple` 临时换�
 ### 开发版本的安装：
 1. 在要下载的地方右键，git bash here（前提是你有装git）输入并执行：（Unix的系统可以在终端中cd到你想要装的地方执行）
 ```
-git clone https://gitee.com/lkteam/lingkong-wing-kernel.git
+git clone https://gitee.com/lkteam/wing-kernel.git
 ```
 ##### 不想安装git的用户可以下载zip，解压，然后打开cmd，cd到这个目录下，继续操作
 2.  输入`cd lingkong-wing`
-3.  去往[主题仓库](https://gitee.com/lkteam/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme.json中的主题名为文件夹名
+3.  去往[主题仓库](https://gitee.com/lkteam/lingkong-wing-theme.git)选择自己喜欢的主题，放入你的lingkong-wing文件夹内，然后编辑theme/theme.json中的主题名为文件夹名
 ##### 温馨提示：
 - 文件夹名不可修改，仓库里是啥名就是啥名
 - 以上这步可以不做，因为wing有一款自带的主题
-- 官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme.json中的主题名为文件夹名即可
+- 官方的所有主题都会放在仓库中，如果你要使用官方主题，只需编辑theme/theme.json中的主题名为文件夹名即可
 
 4. 如果你是windows系统，那在git的bash或cmd中输入`pip install markdown`，如果你是unix系统（macos、linux等），那在终端中输入`pip3 install markdown`
 ##### 温馨提示：这步有可能出错，如果出错请到readme的最下面找到`问题反馈与帮助`找到提问方法提问
 #### 然后你的前期的环境准备工作就完成了
 
 ## 默认主题的使用说明
-#### 首先你要打开theme.json
+#### 首先你要打开theme/theme.json
 #### 把theme这项后面的引号里的blog-XXXX改成你复制过来主题的文件夹名
 ##### 温馨提示：以上这步可以不做，因为wing有一款自带的主题
 #### 然后打开你的主题文件夹，打开文件夹下的config.json配置上你喜欢的东西
@@ -130,9 +130,9 @@ git clone https://gitee.com/lkteam/lingkong-wing-kernel.git
 ```
 
 ### 如何新建友链：
-1. ![第一步](https://gitee.com/lkteam/lingkong-wing-kernel/raw/master/readme/3.png)
+1. ![第一步](https://gitee.com/lkteam/wing-kernel/raw/master/readme/3.png)
 
-2. ![第二步](https://gitee.com/lkteam/lingkong-wing-kernel/raw/master/readme/4.png)ps：这幅图中`python3 wing.py s`为旧版操作，新版`python3 wing.py`即可
+2. ![第二步](https://gitee.com/lkteam/wing-kernel/raw/master/readme/4.png)ps：这幅图中`python3 wing.py s`为旧版操作，新版`python3 wing.py`即可
 
 ### ps：win打开命令行的方法是右键，git bash here。（也可以双击打开）unix则要cd到这个目录
 ### 温馨提示：新版的文件会生成在web文件夹下，如果要上传成果到github、gitee等平台上，请把这个文件夹下的东西全部上传，否则有可能出错
@@ -141,7 +141,7 @@ git clone https://gitee.com/lkteam/lingkong-wing-kernel.git
 ## 其他主题的使用方法可以打开那个主题的文件夹，里面会自带一个readme哦！
 ## 其他主题的使用方法可以打开那个主题的文件夹，里面会自带一个readme哦！
 ## 其他主题的使用方法可以打开那个主题的文件夹，里面会自带一个readme哦！
-#### ps：官方的其他主题也会放在项目中，但没被设置成默认主题，可以自行去theme.json改上主题文件夹名。官方的其他主题同上所述，也一样是放在那个主题的文件夹中的readme！
+#### ps：官方的其他主题也会放在项目中，但没被设置成默认主题，可以自行去theme/theme.json改上主题文件夹名。官方的其他主题同上所述，也一样是放在那个主题的文件夹中的readme！
 
 ## 以下是几个常用的命令
 1.  `python3 wing.py`:激活配置生效
@@ -200,7 +200,7 @@ git clone https://gitee.com/lkteam/lingkong-wing-kernel.git
 
 ## 问题反馈与帮助
 ### 方法一：提issues（荐）
-##### 打开[这个页面](https://gitee.com/lkteam/lingkong-wing-kernel/issues)，然后点击新建issues，接着按照模板填好issues内容，最后点创建就好
+##### 打开[这个页面](https://gitee.com/lkteam/wing-kernel/issues)，然后点击新建issues，接着按照模板填好issues内容，最后点创建就好
 
 ### 方法二：联系作者
 

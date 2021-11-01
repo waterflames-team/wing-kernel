@@ -1,6 +1,6 @@
 # blog_succinct主题使用指南
 
-#### 首先你要打开theme.json
+#### 首先你要打开theme/theme.json
 #### 把theme这项后面的引号里的blog-XXXX改成blog_succinct
 #### 然后打开你的主题文件夹，打开文件夹下的config.json配置上你喜欢的东西
 ### 配置内容说明：

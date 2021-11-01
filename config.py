@@ -3,7 +3,7 @@ import json
 
 def theme():
 
-    conf_z = open("theme.json",'r',encoding = "utf-8")
+    conf_z = open("theme/theme.json",'r',encoding = "utf-8")
     conf_s = conf_z.read()
     conf_z.close()
 
